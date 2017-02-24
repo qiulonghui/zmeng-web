@@ -1,0 +1,56 @@
+/*页面公共样式header和footer*/
+/*header*/
+.header_wrap{
+		background-color: #8c8884;
+}
+#header{
+	width: 1144px;
+	height: 142px;
+	margin: auto;
+	background-color: #8c8884;
+}
+
+#header .header_content{
+	width: 1144px;
+	height: 142px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #8c8884;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+@media only screen and (max-width:1144px ) {
+	#header .header_content{
+		padding:0 25px;
+	}
+}
+#header .header_content a{
+	color: #FFFFFF;
+}
+#header .header_content .logo1{
+	float: left;
+	margin-top: 50px;
+	margin-right: 20px;
+	
+}
+#header .header_content .logo2{
+	float: left;
+	margin-top: 45px;
+}
+#header .nav_left{
+	float: left;
+}
+#header .nav_right{
+	float: right;
+}
+#header .nav_left li,
+#header .nav_right li{
+	 float: left;
+	 height: 142px;
+	 line-height: 142px;
+	 margin-left: 35px;;
+ }
+#header .nav_left li a.active{
+padding-bottom: 15px;
+border-bottom: 3px solid #ea544f;	
+}

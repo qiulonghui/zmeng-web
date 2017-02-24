@@ -1,0 +1,42 @@
+.ad_wrap{
+	min-width:1144px;
+	padding: 0;
+	overflow: hidden;
+}
+.adtext_wrap{
+	background-color: #ea544f;
+}
+.adtext{
+	background-color: #ea544f;
+	text-align: center;
+}
+ 
+ 
+.product_all{
+	width: 1144px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.product_all span{
+	display: inline-block;
+	margin-top: 80px;
+	font-size: 30px;
+}
+
+ .h_title{ 
+ 	margin:80px 100px 15px 100px; 
+}
+.p_e{
+	font-size: 16px;
+	color: #a59d9d;
+	margin-bottom: 50px;
+}
+.img_wrap img{
+	margin: 0px;
+	margin-top: 0;
+	padding-bottom: 75px;
+}
+.img_wrap img.img_center{
+	margin:0 20px;
+}
