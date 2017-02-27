@@ -1,0 +1,110 @@
+body{
+	background-color: #F9FAFB;
+}
+.bg-color{
+	width: 100%;
+}
+.content{
+	width: 1144px;
+	padding: 24px 38px;
+    background: #FFF; 
+    overflow: hidden;
+    margin: 30px auto;
+}
+.content .title {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 35px;
+    background: url(../img/dingdan.png) no-repeat;
+    background-size: 25px 26px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+.content .table_th {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.content .td_1 {
+    width: 300px;
+    float: left;
+    margin-right: 50px;
+    padding-left: 30px;
+}
+.tc {
+    text-align: center;
+}
+.content .td_2 {
+    width: 100px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+    color: #5e94d5;
+}
+.content .td_3 {
+    width: 180px;
+    text-align: center;
+    float: left;
+}
+.content .td_4 {
+    width: 40px;
+    height: 34px;
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+.content .table_table{
+	margin-bottom: 20px ;
+}
+.content .table_table .tab{
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 15px;
+}
+.content .table_table .tab_header{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 35px;
+	background-color: #f9fbfb;
+	border-bottom: 1px solid #e5e5e5;
+	color: #999999;
+}
+.content .table_table .tab_body{
+	line-height: 120px;
+	padding: 0 35px;
+}
+.content .table_table .tab_body .body_td1{
+	display: inline-block;
+	width: 300px;
+	margin-right: 10px;
+}
+.content .table_table .tab_body .body_td2,
+.content .table_table .tab_body .body_td3{
+	display: inline-block;
+    width: 100px;
+    text-align: center;
+   	margin-right: 20px;
+   	color: #669ad7;
+}
+.content .table_table .tab_body .body_td4{
+	display: inline-block;
+    width: 180px;
+    text-align: center;
+   	margin-right: 20px;
+}
+.content .order_footer {
+    margin-top: 45px;
+}
+.content .table_table .tab_null {
+    width: 1144px;
+    height: 265px;
+    line-height: 265px;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}

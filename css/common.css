@@ -54,3 +54,79 @@
 padding-bottom: 15px;
 border-bottom: 3px solid #ea544f;	
 }
+
+/*登录后*/
+#header .nav_right .myclassroom:link, 
+#header .nav_right .myclassroom:visited, 
+#header .nav_right .myclassroom:active{
+	display: inline-block;
+	width: 95px;
+    height: 40px;
+    padding: 0;
+    background: #646c90;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 14px;
+    
+}
+#header .nav_right .nav-user-con{
+	float: left;
+	position: relative;
+}
+#header .nav_right .nav-user-con .user-list{
+	width: 118px;
+    border: 1px solid #e6e6e6;
+    z-index: 99999;
+    background: #FFF;
+    border-radius: 2px;
+	position: absolute;
+	top: 113px;
+	left: -40px;
+}
+#header .nav_right .nav-user-con .user-list:before {
+	
+    position: absolute;
+    display: inline-block;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 62px;
+    top: -11px;
+    content: '';
+}
+#header .nav_right .nav-user-con .user-list>ul>li {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    line-height: 40px;
+    margin-left: 0;   
+}
+#header .nav_right .nav-user-con .user-list>ul>li>a{
+	color: #333333;
+}
+#header .nav_right .nav-user-pic,
+#header .nav_right .nav-user-name {
+    height: 142px;
+    line-height: 142px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#header .nav_right .nav-user-name {
+	margin-right: 0;
+	margin-left: 0;
+}
+#header .nav_right .nav-user-name .caret{
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+#header .nav_right .nav-user-pic img {
+    width: 44px;
+    height: 44px;
+    border-radius: 23px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="header_wrap">
+			<div id="header">
+				<div class="header_content">			
+					<a class="logo1" href="#"><img src="img/logo1.png"/></a>
+					<a class="logo2" href="#"><img src="img/logo2.png"/></a>
+					<ul class="nav_left">
+						<li><a class="active" href="">首页</a></li>
+						<li><a href="#">IMU</a></li>
+						<li><a href="#">移动学习</a></li>
+						<li><a href="#">移动实训</a></li>
+						<li><a href="#">产品报价</a></li>
+						<li><a href="#">购买服务</a></li>
+						<li><a href="#">关于众云</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+					<ul class="nav_right">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>				
+				</div><!--header_content结束-->
+			</div><!--header结束-->
+		</div>
+		<div class="cont_wrapper">
+			<div class="login-box">
+				<div class="login-page">
+					<div class="login-title">登录众云</div>
+					<div class="login-subhead">
+						木有账号?&nbsp;&nbsp;快去<a href="#"> 注册 </a>吧！
+					</div>
+					<form action="#">
+						<input type="hidden" name="openId" value="">
+						<label>
+							<input type="tel" name="phone" data-url="Register/validatePhone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
+						</label>
+						<label>
+							<input type="password" name="password" class="login-txt password" data-type="password" placeholder="请输入密码">
+						</label>
+						<div class="login-info">
+			                <a href="#" class="fr">忘记密码?</a>
+			            </div>
+			            <label>
+			            	<input type="button" value="登 录" class="login-btn">
+			            </label>
+					</form>
+				</div>
+			</div><!--login-box结束-->
+		</div><!--cont_wrapper结束-->
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

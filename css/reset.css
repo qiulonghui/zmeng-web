@@ -27,13 +27,13 @@ img{
     border: none;
 }
 a{
-    text-decoration: none;
     color: #555;
 }
-
+a:link,a:visited,a:hover,a:active{
+	text-decoration: none;
+}
 a:hover{
-    color: #3366ff;
-    text-decoration: none;
+    color: #3366ff;   
 }
 
 
