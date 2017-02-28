@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="header_wrap">
+			<div id="header">
+				<div class="header_content">			
+					<a class="logo1" href="#"><img src="img/logo1.png"/></a>
+					<a class="logo2" href="#"><img src="img/logo2.png"/></a>
+					<ul class="nav_left">
+						<li><a class="active" href="">首页</a></li>
+						<li><a href="#">IMU</a></li>
+						<li><a href="#">移动学习</a></li>
+						<li><a href="#">移动实训</a></li>
+						<li><a href="#">产品报价</a></li>
+						<li><a href="#">购买服务</a></li>
+						<li><a href="#">关于众云</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+					<ul class="nav_right">
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>				
+				</div><!--header_content结束-->
+			</div><!--header结束-->
+		</div>
+		<div class="cont_wrapper">
+			<div class="login-box">
+				<div class="login-page">
+					<div class="login-title">
+						注册
+						<span class="login-title-subhead">验证手机号</span>
+					</div>
+					<div class="login-subhead">
+						已有账号，请直接<a href="#">登录</a>
+					</div>
+					<form action="#" autocomplete="off">
+						<input type="hidden" name="openId" value="">
+						<label>
+							<input type="tel" name="phone" data-url="Register/validatePhone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
+						</label>
+						<div class="code-verify" data-action="#">
+							<input type="text" name="code"maxlength="6" class="login-code" data-type="captcha" placeholder="请输入验证码" autocomplete="off"/>
+							<input type="button" class="get-code-btn" value="获取验证码" data-type="code" disabled="disabled">
+						</div>
+						<label>
+							<input type="password" name="password" class="login-txt password" data-type="password" placeholder="请输入密码">
+						</label>
+						<label>
+							<select name="login-type" class="type" >
+								<option selected="selected">请选择注册类型(必填)</option>
+								<option value="学生">学生</option>
+								<option value="老师">老师</option>
+								<option value="机构">机构</option>
+							</select>
+						</label>
+						<div class="login-info">
+							<label>
+								<input type="checkbox" checked="checked"/>
+								<span class="login-chk">我已阅读并同意<a href="#">用户使用协议</a></span>
+							</label>
+			            </div>
+			            <label>
+			            	<input type="button" value="登 录" class="login-btn">
+			            </label>
+					</form>
+				</div>
+			</div><!--login-box结束-->
+		</div><!--cont_wrapper结束-->
+		<div class="footer"></div>
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>	
+	</body>
+</html>

@@ -130,3 +130,15 @@ border-bottom: 3px solid #ea544f;
     height: 44px;
     border-radius: 23px;
 }
+input[type=button], input[type=submit], input[type=reset],{
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    cursor: pointer;
+    outline: 0;
+}
+input[type=text],select{
+	font-size: 14px;
+}

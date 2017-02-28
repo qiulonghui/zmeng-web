@@ -1,3 +1,4 @@
+/*登录*/
 body{
 	background-color: #f1f3f5;
 }
@@ -42,7 +43,7 @@ body{
     margin-bottom: 20px;
     position: relative;
 }
-.login-box form .login-txt {
+.login-box form .login-txt{
     width: 288px;
     height: 49px;
     padding-left: 40px;
@@ -90,4 +91,57 @@ body{
 }
 .login-box form .login-btn:hover {
     background: #50567a;
+}
+/*注册*/
+.login-box .login-title .login-title-subhead {
+    font-size: 24px;
+    margin-left: 20px;
+}
+.login-box form .code-verify {
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.login-box form .code-verify .login-code {
+    width: 158px;
+    height: 49px;
+    padding-left: 40px;
+    border: 1px solid #dcdcde;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background: url(../img/verify-icon.png) no-repeat 12px center;
+	background-size: auto 18px;
+}
+.login-box form .code-verify .get-code-btn  {
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #dcdcde;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 0;
+}
+.login-box form .login-info {
+    line-height: 24px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.login-box form .login-info a {
+    color: #8190db;
+}
+.login-box form select.type{
+	width: 330px;
+    height: 49px;
+    padding-left: 20px;
+    border: 1px solid #dcdcde;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(217, 218, 226); 
 }
