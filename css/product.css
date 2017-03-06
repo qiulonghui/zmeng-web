@@ -1,0 +1,65 @@
+body{
+	background-color: #F9FAFB;
+}
+.bg-color{
+	width: 100%;
+}
+.content{
+	width: 1144px;
+	padding: 24px 38px;
+    background: #FFF; 
+    overflow: hidden;
+    margin: 30px auto;
+}
+.content .title {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 35px;
+    background: url(../img/dingdan.png) no-repeat;
+    background-size: 25px 26px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+.content .product_wrap{
+	margin-top: 20px;
+}
+.content .item{
+	display: inline-block;
+	width: 48%;
+	border: 1px solid #dedede;
+	padding:15px 20px;
+	margin: 20px 0 0 0;
+}
+.content .item .item_info{
+	display: inline-block;
+	width: calc(100% - 133px);
+	vertical-align: middle;
+	padding-left: 25px ;
+}
+.content .item .item_info .info_title{
+	font-size: 20px;
+	line-height: 20px;
+	width: 100%;
+	margin-bottom: 12px;
+}
+.content .item .item_info .info_title span{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 20px;
+	float: right;
+}
+.content .item .item_info .Price{
+	display: block;
+	font-size: 14px;
+}
+.content .item .item_info .item_service{
+	margin-top: 14px;
+	font-size: 14px;
+	padding: 8px 10px;
+	background-color: #f7f7f7;
+}
+.item_info .item_service .service_cont{
+	text-indent: 3em;
+	line-height: 18px;
+}

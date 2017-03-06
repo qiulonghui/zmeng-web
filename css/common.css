@@ -74,7 +74,7 @@ border-bottom: 3px solid #ea544f;
 	position: relative;
 }
 #header .nav_right .nav-user-con .user-list{
-	width: 118px;
+	width: 138px;
     border: 1px solid #e6e6e6;
     z-index: 99999;
     background: #FFF;
@@ -128,7 +128,7 @@ border-bottom: 3px solid #ea544f;
     height: 44px;
     border-radius: 23px;
 }
-input[type=button], input[type=submit], input[type=reset],{
+input[type=button], input[type=submit], input[type=reset]{
     border: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
