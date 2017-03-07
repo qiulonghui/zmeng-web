@@ -10,6 +10,7 @@ body{
     background: #FFF; 
     overflow: hidden;
     margin: 30px auto;
+    padding-bottom: 120px;
 }
 .content .title {
     height: 26px;
@@ -18,7 +19,7 @@ body{
     background: url(../img/dingdan.png) no-repeat;
     background-size: 25px 26px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
     color: #333333;
 }
 .content .product_wrap{
@@ -26,40 +27,76 @@ body{
 }
 .content .item{
 	display: inline-block;
-	width: 48%;
+	width: 100%;
 	border: 1px solid #dedede;
 	padding:15px 20px;
 	margin: 20px 0 0 0;
 }
 .content .item .item_info{
 	display: inline-block;
-	width: calc(100% - 133px);
-	vertical-align: middle;
-	padding-left: 25px ;
+	width: calc(100% - 215px);
+	vertical-align: top;
+	padding-left: 20px ;
 }
 .content .item .item_info .info_title{
 	font-size: 20px;
 	line-height: 20px;
 	width: 100%;
 	margin-bottom: 12px;
+	font-weight: 700;
 }
-.content .item .item_info .info_title span{
-	display: inline-block;
-	font-size: 12px;
-	line-height: 20px;
-	float: right;
+.content .item .item_info .item_txt{
+	margin-bottom: 12px;
+}
+.content .item .item_info .item_txt a{
+	color: #165ff2;
 }
 .content .item .item_info .Price{
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
 }
-.content .item .item_info .item_service{
-	margin-top: 14px;
-	font-size: 14px;
-	padding: 8px 10px;
-	background-color: #f7f7f7;
+.content .item .item_info em{
+	font-size: 18px;
+	font-style: normal;
+	color: #ff7d34;
+	vertical-align: middle;
 }
-.item_info .item_service .service_cont{
-	text-indent: 3em;
-	line-height: 18px;
+.content .item .item_info .item_service,
+.content .item .item_info .item_cycle{
+	margin: 14px 0;
+	font-size: 12px;
+	
+}
+.item_info .item_service span,
+.item_info .item_cycle span{
+	display: inline-block;
+	line-height: 26px;
+	cursor: pointer;
+}
+.item_info .item_service .service_cont,
+.item_info .item_cycle .cycle_cont{
+	padding: 0 6px;
+	border: 1px solid #c3c0c2;
+	margin-left: 15px;
+}
+.item_info .item_service .service_cont.active,
+.item_info .item_cycle .cycle_cont.active{
+	border: 1px solid #165ff2;
+	background: url(../img/chose.png) no-repeat bottom right;
+	padding-right: 12px;
+}
+.item_info .buy{
+	display: inline-block;
+	height: 42px;
+	width: 168px;
+	line-height: 42px;
+	background-color: #ff6a00;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 18px;
+	margin: 28px auto 28px 194px ;
+}
+
+.item_info .buy:hover{
+	background-color: #e45300;
 }
