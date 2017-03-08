@@ -54,7 +54,8 @@
     height: 50px;
     margin-bottom: 40px;
 }
-.content .cont_right .tab .con-row span{
+.content .cont_right .tab .con-row span,
+.content .con-pic span{
 	width: 20%;
     height: 100%;
     display: inline-block;
@@ -81,8 +82,8 @@
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
-.content .cont_right .tab .con-row .txt_bar select#addrass, 
-.content .cont_right .tab .con-row .txt_bar select#distract{
+.con-row .txt_bar select#addrass, 
+.con-row .txt_bar select#distract{
     width: 140px;
 }
 .content .cont_right .tab .con-row .txt_bar select#distract {
@@ -103,10 +104,55 @@
     border-radius: 4px;
     margin-left: 140px;	
 }
+.content .con-pic{
+	width: 100%;
+    margin-bottom: 40px;
+   
+}
 .content .cont_right .tab .con-row a:hover {
     background: #50567a;
 }
-
+.content .img_div{
+	overflow: hidden;
+	padding-left: 20px;
+	width:200px;
+	display: inline-block;
+}
+.content .img_div img{
+	width: 100%;
+	background-color: #E8E8E8;
+}
+.con-pic .txt_cont{
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+    padding-left: 10px;
+    }
+.content .file_div {
+	width: 162px;
+    height: 45px;
+    background: #fde01f;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 148px;
+}
+ .content .file_div #file0{
+ 	position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
 /*tab2*/
 .content .cont_right .tab .avatar{
 	width: 100px;
