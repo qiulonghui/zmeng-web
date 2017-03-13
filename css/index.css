@@ -1,3 +1,4 @@
+/*ad样式*/
 .header_wrap{
 	position: absolute;
 	top: 0;
@@ -17,8 +18,7 @@
 	background-color: #ea544f;
 	text-align: center;
 }
- 
- 
+ /*三大产品*/
 .product_all{
 	width: 1144px;
 	margin: 0 auto;
@@ -57,4 +57,94 @@
 }
 .img_wrap img.img_center{
 	margin:0 20px;
+}
+/*学友圈*/
+.friend_circle{
+	width: 1144px;
+	margin: 0 auto;
+}
+.friend_circle .circle{
+	display: inline-block;
+	width: 49%;
+	border: 1px solid #e5e5e5;
+	padding: 15px;
+}
+.friend_circle .circle + .circle{
+	float: right;
+}
+.circle .circle_title {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.circle .circle_title span.img{
+	display: inline-block;
+	width: 60px;
+	height:60px;
+	background: url(../img/学友圈icon.jpg) no-repeat;
+	border-radius: 60px;
+	vertical-align: middle;
+}
+.circle_title .title_text{
+	display: inline-block;
+	width:calc(100% - 70px);
+	vertical-align: middle;
+	padding-left: 15px;
+}
+.title_text .sub_title{
+	display: inline-block;
+	margin-top: 5px;
+}
+.title_text .sub_title em{
+	margin-right: 10px;
+	font-style: normal;
+}
+.circle_cont{
+	position: relative;
+	overflow: hidden;
+	height: 600px;
+}
+.circle_cont ul{
+	position: absolute;
+	padding-left:50px;
+	font-size: 14px;
+	top: 0;
+	left: 0;
+}
+.circle_cont ul li{
+	padding: 20px 0;
+	border-bottom: 1px solid #E5E5E5;
+}
+.circle_cont ul li .q_name{
+	color: red;
+}
+.circle_cont ul li .date{
+	float: right;
+	font-size: 12px;
+	color: #737373;
+}
+.circle_cont ul li p{
+	margin-top: -10px;
+	line-height: 1.5;
+} 
+.circle_cont span i.use_pic{
+	display: inline-block;
+	width: 37px;
+	height: 37px;
+	border-radius: 37px;
+	vertical-align: top;
+	margin-left: -48px ;
+	margin-right: 10px;
+}
+.theme{
+	padding: 10px 6px;
+	background-color: #f7f7f7;
+}
+.theme img{
+	vertical-align: top;
+}
+.theme span{
+	display: inline-block;
+	width: calc(100% - 68px);
+	padding-left: 10px;
+	font-size: 12px;
 }
