@@ -5,42 +5,68 @@
 	<title></title>
 	<style type="text/css">
 	.box1,.box2{
-		width: 200px;
+		width: 600px;
 		height: 200px;
 		}
 	.box1{
 		background-color: red;
 	}
 	.box2{
-		background-color: blue;
+		background: -webkit-linear-gradient(top,rgba(0,0,0,1),rgba(0,0,0,0.4));
+		transition: all 3s;
+		left: 100px;
+		top: 800px;
 	}
-	.btn{
-		display: inline-block;
-		width: 80px;
-		height: 50px;
-		
-	}
-	 .t1{
-		background-color: yellow;
-	}
-	 .t2{
-		background-color: pink;
-	}
-	 .t1:hover .t2{
-		background-color: yellow;
-	}
-	.box1:hover .box2{
-		background-color: greenyellow;
+	.change{
+		background:yellow;
 	}
 	</style>
 </head>
 <body>
 	<div class="box1">
-		<span class="btn t1"> btn</span>
-		<span class="btn t2"></span>
-	</div>
-	<div class="box2">
 		
 	</div>
+	<div class="box2">
+	
+	</div>
+	<a class="df" href=""></a>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".box1").click(function(){
+				
+				$(".box2").toggleClass("change")
+				
+			})
+		})
+	</script>
+	
+	<script type="text/javascript">
+		var aT1=document.getElementsByClassName("t1");
+		var aBox=document.getElementsByTagName("div");	
+		for(i=0;i<aT1.length;i++){		
+			move(aT1[i]);
+			
+			aT1[i].onmouseover=function(){
+				clearInterval(this.time)		
+		}
+//			aT1[0].time=setInterval(function(){
+//				aT1[0].style.width=aT1[0].offsetWidth+2+"px";
+//		},30)	
+//			aT1[1].time=setInterval(function(){
+//				aT1[1].style.width=aT1[1].offsetWidth+2+"px";
+//		},30)	
+	}
+		
+		
+		function move(obj){
+				obj.time=setInterval(function(){
+				obj.style.width=obj.offsetWidth+2+"px";
+		},30)
+	}
+			
+		
+		
+	</script>
 </body>
 </html>

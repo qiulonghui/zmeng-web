@@ -109,8 +109,8 @@
 						</span>
 					</div>
 					<div class="circle_cont">
-						<ul>
-							<li>
+						<ul class="ul_wrap">
+							<li class="speak">
 								<span class="q_name"><i class="use_pic"><img src="img/userpic.jpg"/></i>宁采臣</span>
 								<span class="date">3月3日 12:49</span>
 								<p>实时采集实习生过程性数据，实现实习有效过程性评价，实现大学有效管理和及时指导学生实习工作</p>
@@ -159,8 +159,8 @@
 						</span>
 					</div>
 					<div class="circle_cont">
-						<ul>
-							<li>
+						<ul class="ul_wrap">
+							<li class="speak">
 								<span class="q_name"><i class="use_pic"><img src="img/userpic.jpg"/></i>宁采臣</span>
 								<span class="date">3月3日 12:49</span>
 								<p>实时采集实习生过程性数据，实现实习有效过程性评价，实现大学有效管理和及时指导学生实习工作</p>
@@ -204,21 +204,33 @@
 		
 		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move - 备份.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function(){
-				var ulHeight=$('.circle_cont li').outerHeight()*3;
-				var ulCont=$('.circle_cont ul').html()+$('.circle_cont ul').html();
-				var ulTop=$('.circle_cont ul').css("top");
-				$('.circle_cont').height(ulHeight);
-				$('.circle_cont ul').html(ulCont);
-				setInterval(function(){
-					if(ulTop==-ulHeight){
-						$('.circle_cont ul').css("top",0)
-					}else{
-					ulTop=parseInt(ulTop)-5;
-					$('.circle_cont ul').css("top",ulTop)};
-				},30)
-			})
+			var oUl=document.getElementsByClassName("ul_wrap");
+			var oLi=document.getElementsByClassName("speak");
+			for(i=0;i<oUl.length;i++){
+				oUl[i].style.height=oLi[i].offsetHeight*3+"px";
+				oUl[i].innerHTML+=oUl[i].innerHTML;
+				oUl[i].time=null;
+				roll(oUl[i]);
+				oUl[i].onmouseover=function(){
+					clearInterval(this.time);
+				}
+				oUl[i].onmouseout=function(){
+					roll(this);
+				}
+			}
+			
+			function roll(obj){	
+				clearInterval(obj.time);
+				obj.time=setInterval(function(){
+					if(obj.offsetTop<=-obj.offsetHeight){
+					obj.style.top=0;
+				}	
+					obj.style.top=obj.offsetTop-1+"px";
+				},30)			
+			}
+		
 		</script>
 	</body>
 </html>
