@@ -10,6 +10,7 @@ body{
     background: #FFF; 
     overflow: hidden;
     margin: 30px auto;
+    margin-top: 80px;
 }
 
 .content .title {
@@ -76,8 +77,7 @@ body{
 	color: #999999;
 }
 .content .table_table .tab_body{
-	line-height: 120px;
-	padding: 0 35px;
+	padding: 60px 35px;
 }
 .content .table_table .tab_body .body_td1{
 	display: inline-block;

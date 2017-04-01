@@ -11,6 +11,7 @@ body{
     overflow: hidden;
     margin: 30px auto;
     padding-bottom: 120px;
+    margin-top: 80px;
 }
 .content .title {
 	padding: 20px 0;

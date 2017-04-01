@@ -5,33 +5,51 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
 	<body>
-		<div class="header_wrap">
-			<div id="header">
-				<div class="header_content">			
-					<a class="logo1" href="index.html"><img src="img/logo1.png"/></a>
-					<a class="logo2" href="index.html"><img src="img/logo2.png"/></a>
-					<ul class="nav_left">
-						<li><a class="active" href="index.html">首页</a></li>
-						<li><a href="#">IMU</a></li>
-						<li><a href="#">移动学习</a></li>
-						<li><a href="#">移动实训</a></li>
-						<li><a href="#">产品报价</a></li>
-						<li><a href="#">购买服务</a></li>
-						<li><a href="#">关于众云</a></li>
-						<li><a href="#">联系我们</a></li>
-					</ul>
-					<ul class="nav_right">
-						<li><a href="login.html">登录</a></li>
-						<li><a href="register.html">注册</a></li>
-					</ul>				
-				</div><!--header_content结束-->
-			</div><!--header结束-->
-		</div>
+		<header class="header">
+			<div class="header-container">
+				<div class="navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html"></a>
+					</div>
+					<div class="navbar-collapse clearfloat">
+						<ul class="navbar-button">
+							<li>
+								<a class="login" href="login.html">登录</a>
+							</li>
+							<li>
+								<a class="signup" href="register.html"><span>免费注册</span></a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li>
+								<a href="">功能</a>
+							</li>
+							<li>
+								<a href="">价格</a>
+							</li>
+							<li>
+								<a href="downapp.html">下载</a>
+							</li>
+							<li>
+								<a href="">解决方案</a>
+							</li>
+							<li>
+								<a href="">帮助</a>
+							</li>
+							<li>
+								<a href="">圈子</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 		<div class="cont_wrapper">
 			<div class="login-box">
 				<div class="login-page">
@@ -39,24 +57,62 @@
 					<div class="login-subhead">
 						木有账号?&nbsp;&nbsp;快去<a href="register.html"> 注册 </a>吧！
 					</div>
-					<form action="#">
+					<form action="#" autocomplete="off" >
 						<input type="hidden" name="openId" value="">
 						<label>
-							<input type="tel" name="phone" data-url="Register/validatePhone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
+							<input type="tel" name="phone" class="login-txt phone"  placeholder="请输入手机号">
 						</label>
 						<label>
-							<input type="password" name="password" class="login-txt password" data-type="password" placeholder="请输入密码">
+							<input type="password" name="password" class="login-txt password" placeholder="请输入密码">
 						</label>
 						<div class="login-info">
 			                <a href="#" class="fr">忘记密码?</a>
 			            </div>
 			            <label>
-			            	<a href="userSet.html"><input type="button" value="登 录" class="login-btn"></a>			         
+			            	<a href="index-登录后.html"><input type="button" value="登 录" class="login-btn"></a>			         
 			            </label>
 					</form>
 				</div>
 			</div><!--login-box结束-->
 		</div><!--cont_wrapper结束-->
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-nav">
+					<div class="left">
+						<h4>联系方式</h4>
+						<p>广州众盟信息科技有限公司</p>
+						<p>电话：020-8558-2303</p>
+						<p>
+							地址：广州市天河区五山路科华街251号<span>乐天创意园B座5005单元</span>
+						</p>	
+						<p>网址：www.alimu.com</p>
+						<p>邮编：510663</p>
+					</div>
+					<div class="right">
+						<div class="right-item">
+							<span class="m-place rwm1"></span>
+							<span class="icon-place sb-icon1"></span>
+							<p>公众号</p>
+						</div>
+						<div class="right-item">
+							<span class="m-place rwm2"></span>
+							<span class="icon-place sb-icon2"></span>
+							<p>iOS</p>
+						</div>
+						<div class="right-item">
+							<span class="m-place rwm3"></span>
+							<span class="icon-place sb-icon3"></span>
+							<p>安卓</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="copyandlang text">Copyright © 2017 allimu.com 版权所有</div>
+				</div>
+			</div>
+		</footer>
 		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

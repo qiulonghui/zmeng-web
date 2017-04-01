@@ -11,41 +11,52 @@
 		<link rel="stylesheet" type="text/css" href="css/order.css"/>
 	</head>
 	<body>
-		<div class="header_wrap">
-			<div id="header">
-				<div class="header_content">			
-					<a class="logo1" href="index.html"><img src="img/logo1.png"/></a>
-					<a class="logo2" href="index.html"><img src="img/logo2.png"/></a>
-					<ul class="nav_left">
-						<li><a class="active" href="index.html">首页</a></li>
-						<li><a href="#">IMU</a></li>
-						<li><a href="#">移动学习</a></li>
-						<li><a href="#">移动实训</a></li>
-						<li><a href="#">产品报价</a></li>
-						<li><a href="#">购买服务</a></li>
-						<li><a href="#">关于众云</a></li>
-						<li><a href="#">联系我们</a></li>
-					</ul>
-					<ul class="nav_right">
-						<li><a href="#" class="myclassroom">我的教室</a></li>
-						<div class="nav-user-con">
-	                        <a href="#">
-	                            <span class="nav-user-pic"><img src="http://cdn.sanjieke.cn/upload/image/148790580150.png"></span>
-	                            <span class="nav-user-name"><span class="caret"></span></span>
-	                        </a>
-	                        <div class="user-list" style="display: none;">
-		                        <ul>
+		<header class="header transparent">
+			<div class="header-container">
+				<div class="navbar">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html"></a>
+					</div>
+					<div class="navbar-collapse clearfloat">
+						<ul class="navbar-button">
+							<li>
+								<a class="my-class" href="">我的教室</a>
+							</li>
+							<li class="avatar-wrap"> 
+								<span class="avatar img-circle"></span>
+								<span class="caret"></span>
+								<ul class="use-list" style="display: none;">
 		                            <li><a href="userSet.html">设置</a></li>
 		                            <li><a href="order.html">我的订单</a></li>
 		                            <li><a href="product.html">可购产品和服务</a></li>
 		                            <li><a href="#">我的产品和服务</a></li>
 		                        </ul>
-		                    </div>
-	                   </div>	                    
-					</ul>				
-				</div><!--header_content结束-->
-			</div><!--header结束-->
-		</div>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li>
+								<a href="">功能</a>
+							</li>
+							<li>
+								<a href="">价格</a>
+							</li>
+							<li>
+								<a href="downapp.html">下载</a>
+							</li>
+							<li>
+								<a href="">解决方案</a>
+							</li>
+							<li>
+								<a href="">帮助</a>
+							</li>
+							<li>
+								<a href="">圈子</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 		
 		<div class="content">
 			<div class="title">我的订单</div>
@@ -66,7 +77,7 @@
 		    		<p>23:50:20订单号：U06889-161115-375020</p>
 		    		</div>
 		    		<div class="tab_body">
-		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品经理</span>
+		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品</span>
 		    			<span class="body_td2">699.00</span>
 		    			<span class="body_td3">699.00</span>
 		    			<span class="body_td4">订单已超时</span>
@@ -77,7 +88,7 @@
 		    		<p>23:50:20订单号：U06889-161115-375020</p>
 		    		</div>
 		    		<div class="tab_body">
-		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品经理</span>
+		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品</span>
 		    			<span class="body_td2">699.00</span>
 		    			<span class="body_td3">699.00</span>
 		    			<span class="body_td4">订单已超时</span>
@@ -88,7 +99,7 @@
 		    		<p>23:50:20订单号：U06889-161115-375020</p>
 		    		</div>
 		    		<div class="tab_body">
-		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品经理</span>
+		    			<span class="body_td1">三节课-产品经理进阶：从产品助理到高级产品</span>
 		    			<span class="body_td2">699.00</span>
 		    			<span class="body_td3">699.00</span>
 		    			<span class="body_td4">订单已超时</span>
@@ -102,8 +113,45 @@
 		        <div class="order_page"></div>
 		    </div>
 		</div><!--content结束-->
-	
-		<div class="footer"></div>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-nav">
+					<div class="left">
+						<h4>联系方式</h4>
+						<p>广州众盟信息科技有限公司</p>
+						<p>电话：020-8558-2303</p>
+						<p>
+							地址：广州市天河区五山路科华街251号<span>乐天创意园B座5005单元</span>
+						</p>	
+						<p>网址：www.alimu.com</p>
+						<p>邮编：510663</p>
+					</div>
+					<div class="right">
+						<div class="right-item">
+							<span class="m-place rwm1"></span>
+							<span class="icon-place sb-icon1"></span>
+							<p>公众号</p>
+						</div>
+						<div class="right-item">
+							<span class="m-place rwm2"></span>
+							<span class="icon-place sb-icon2"></span>
+							<p>iOS</p>
+						</div>
+						<div class="right-item">
+							<span class="m-place rwm3"></span>
+							<span class="icon-place sb-icon3"></span>
+							<p>安卓</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="copyandlang text">Copyright © 2017 allimu.com 版权所有</div>
+				</div>
+			</div>
+		</footer>
+		
 		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>

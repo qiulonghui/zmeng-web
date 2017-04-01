@@ -3,10 +3,10 @@ body,html,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,div,dl,dt,dd,form{
     padding: 0;
 }
 body{
-    font-family: Arial,"微软雅黑";
-    font-size: 12px;
-    color: #434343;
-    line-height: 1.8;
+    font-family:'Helvetica Neue','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+    font-size: 14px;
+    color: #383838;
+    line-height: 1.5;
 }
 .clear{
     clear: both;

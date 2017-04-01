@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/downapp.css" />		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
 	</head>
+
 	<body>
 		<header class="header transparent">
 			<div class="header-container">
@@ -57,49 +64,24 @@
 				</div>
 			</div>
 		</header>
-		<div class="cont_wrapper">
-			<div class="login-box">
-				<div class="login-page">
-					<div class="login-title">
-						注册
-						<span class="login-title-subhead">验证手机号</span>
-					</div>
-					<div class="login-subhead">
-						已有账号，请直接<a href="login.html">登录</a>
-					</div>
-					<form action="#" autocomplete="off">
-						<input type="hidden" name="openId" value="">
-						<label>
-							<input type="tel" name="phone" data-url="Register/validatePhone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
-						</label>
-						<div class="code-verify" data-action="#">
-							<input type="text" name="code"maxlength="6" class="login-code" data-type="captcha" placeholder="请输入验证码" autocomplete="off"/>
-							<input type="button" class="get-code-btn" value="获取验证码" data-type="code" disabled="disabled">
-						</div>
-						<label>
-							<input type="password" name="password" class="login-txt password" data-type="password" placeholder="请输入密码">
-						</label>
-						<label>
-							<select name="login-type" class="type" >
-								<option selected="selected">请选择注册类型(必填)</option>
-								<option value="学生">学生</option>
-								<option value="老师">老师</option>
-								<option value="机构">机构</option>
-							</select>
-						</label>
-						<div class="login-info">
-							<label>
-								<input type="checkbox" checked="checked"/>
-								<span class="login-chk">我已阅读并同意<a href="#">用户使用协议</a></span>
-							</label>
-			            </div>
-			            <label>
-			            	<input type="button" value="注 册" class="login-btn">
-			            </label>
-					</form>
+		<div class="main">
+			<div class="content">
+				<h2 class="title">众学堂&nbsp;———&nbsp;创造教育新体验</h2>
+				<div class="item">
+					<div class="download-img"></div>
+					<div class="iph-icon"></div>
+					<p>iOS版</p>
 				</div>
-			</div><!--login-box结束-->
-		</div><!--cont_wrapper结束-->
+				<div class="item">
+					<div class="download-img"></div>
+					<div class="and-icon"></div>
+					<p>Android版</p>
+				</div>
+				<p class="txt-cont">众学糖是创新性的教学互动“糖果”，创造教育新体验，给予用户“教学轻松”和“学习快乐”的味道，是专注于“互联网+教育”的移动互联网学习品牌产品。<br /><br /></p>
+				<p class="txt-cont">众学糖专门为老师和学校快速发展互联网在线教育而设计，为学校和老师搭建基于MOOC、微课、翻转课堂、碎片式学习等理念的网络教学平台，满足学校全日制翻转课堂教学改革、资源统一管理、微专业、微课、第二学历、自考助学、成教教学、实训教学、认证培训、题库和在线考试等新型教学模式业务，实现教、学、考、管理、运营的全业务流程应用。<br /><br /></p>
+				<p class="txt-cont">众学糖同样适用于非学历教育，为资源共建、职业教育、专业技术培训、终身教育等提供专业的平台解决方案，帮助开展网络推广，在线运营等业务，并提供资源渠道和资源整体解决方案。</p>
+			</div>
+		</div>	
 		<footer class="site-footer">
 			<div class="container">
 				<div class="footer-nav">
@@ -138,7 +120,8 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

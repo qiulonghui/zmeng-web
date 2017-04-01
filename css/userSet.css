@@ -2,6 +2,9 @@
 .bg-color{
 	width: 100%;
 	background-color: #fbfbfb;
+	overflow: hidden;
+	margin-top:50px;
+	padding-bottom: 120px;
 }
 .content{
 	width: 1144px;
@@ -145,6 +148,7 @@
     margin-left: 148px;
 }
  .content .file_div #file0{
+ 	cursor: pointer;
  	position: absolute;
     top: 0;
     left: 0;
