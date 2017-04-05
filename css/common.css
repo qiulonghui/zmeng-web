@@ -282,13 +282,15 @@ input[type=button], input[type=submit], input[type=reset]{
     appearance: none;
     box-shadow: none;
     cursor: pointer;
-    outline: 0;
+    outline: none;
 }
 input[type=text],select{
 	font-size: 14px;
+	outline: none;
 }
-input:autofill {  
-    background-color: hsl(65, 100%, 87%);  
-    background-image: none;  
-    color: #000000;  
-}  
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    }  

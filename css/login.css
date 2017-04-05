@@ -39,12 +39,28 @@ body{
     margin-top: 45px;
     display: block;
     padding: 0 34px;
-    position: relative;
 }
 .login-box form label {
     display: block;
     margin-bottom: 20px;
     position: relative;
+}
+.login-box form label .acc1
+,.login-box form label .pass1{
+	display: inline-block;
+	width: 40px;
+	height: 53px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.login-box form label .acc1{
+	background: url(../img/phone-icon.png) no-repeat 12px center;
+    background-size: auto 18px;
+}
+.login-box form label .pass1{
+	background: url(../img/pwd-icon.png) no-repeat 12px center;
+    background-size: auto 18px;
 }
 .login-box form .login-txt{
     width: 288px;
@@ -59,14 +75,7 @@ body{
     border-bottom-color: rgb(217, 218, 226);  
     box-sizing: content-box; 
 }
-.login-box form .phone{
- 	background: url(../img/phone-icon.png) no-repeat 12px center;
-     background-size: auto 18px;
- }
-.login-box form .password{
-	background: url(../img/pwd-icon.png) no-repeat 12px center;
-	background-size: auto 18px;
-}
+
 .login-box form .login-info {
     line-height: 24px;
     margin-bottom: 10px;
@@ -114,8 +123,6 @@ body{
     border-radius: 5px;
     font-size: 14px;
     color: #333;
-    background: url(../img/verify-icon.png) no-repeat 12px center;
-	background-size: auto 18px;
 	box-sizing: content-box;
 }
 .login-box form .code-verify .get-code-btn  {

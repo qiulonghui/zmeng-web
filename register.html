@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" href="css/register.css" />
 	</head>
 	<body>
 		<header class="header transparent">
@@ -70,13 +71,16 @@
 					<form action="#" autocomplete="off">
 						<input type="hidden" name="openId" value="">
 						<label>
-							<input type="tel" name="phone" data-url="Register/validatePhone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
+							<span class="acc1"></span>
+							<input type="tel" name="phone" class="login-txt phone" data-type="phone" placeholder="请输入手机号">
 						</label>
 						<div class="code-verify" data-action="#">
+							<span class="pass1"></span>
 							<input type="text" name="code"maxlength="6" class="login-code" data-type="captcha" placeholder="请输入验证码" autocomplete="off"/>
 							<input type="button" class="get-code-btn" value="获取验证码" data-type="code" disabled="disabled">
 						</div>
 						<label>
+							<span class="pass1"></span>
 							<input type="password" name="password" class="login-txt password" data-type="password" placeholder="请输入密码">
 						</label>
 						<label>
