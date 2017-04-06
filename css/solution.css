@@ -1,0 +1,19 @@
+.main{
+	padding-top: 50px;
+}
+.main .jumbotron{
+	height: 460px;
+    text-align: center;
+}
+.main .jumbotron h1 {
+	font-size: 48px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.main .jumbotron p {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 16px;
+    color: grey;
+    line-height: 28px;
+}
