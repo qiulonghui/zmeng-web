@@ -1,6 +1,9 @@
 body{
 	background-color: #FFFFFF;
 }
+.header{
+    background-color: rgba(255,255,255,.97);
+}
 .transparent{
 	height: 60px !important;
 	background-color: rgba(0,0,0,0);

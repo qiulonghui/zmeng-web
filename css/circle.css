@@ -1,0 +1,122 @@
+html{
+	font-size: 10px;
+}
+body{
+	background: url(../img/circle-bg.jpg) no-repeat;
+	background-position: center top;
+}
+.main{
+	padding-top:5rem;
+	padding-bottom: 8rem;
+}
+.main .title,
+.main .sub-title{
+	width: 100%;
+	text-align: center !important;
+	font-size: 4.2rem;
+	font-weight: 100;
+	display: inline-block;
+}
+.main .title{
+	margin-top: 10rem;
+}
+.main .sub-title{
+	font-size: 1.6rem;
+	color: grey;
+	margin-top: 5rem;
+	margin-bottom: 10rem; 
+}
+.expression + .expression{
+	border-top:2px solid #c5c5c5;
+	padding-top: 2.5rem;
+}
+.expression-list{
+	width: 79.2rem;
+	margin: 0 auto;
+}
+.user-info .nick-name{
+	font-size: 3rem;
+	margin-left: 1rem;
+}
+
+.user-info .pub-time{
+	display: block;
+	padding-left: 8rem;
+	margin-top: -2.5rem;
+	margin-left: 1.5rem;
+	color: #8f9198;
+	margin-bottom: 1.5rem;
+}
+.user-info .avatar-publisher{
+	display: inline-block !important;
+	width: 8rem;
+	height: 8rem;
+	background: url(../img/avatar-publisher.jpg) no-repeat;
+	border-radius: 50%;
+	vertical-align: top;
+}
+.exp-cont{
+	padding-left: 9.5rem;
+	overflow: hidden;
+}
+.exp-cont .cont{
+	margin-bottom: 15px;
+	color: black;
+}.img-list {
+	width: 44rem;
+	overflow: hidden;
+}
+.img-list li{
+	width: 14rem;
+	height: 14rem;
+	float: left;
+	margin-left: 0.5rem;
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+.operation{
+	padding: 1.5rem 0;
+}
+.operation span{
+	float: right;
+}
+.operation span:first-child{
+	cursor: pointer;
+}
+.comment-area{
+	padding-left:  9.5rem;
+}
+.comment-area li{
+	padding: 2rem 0;
+	border-top: 1px solid #e3e3e3;
+}
+.avatar-reviewer{
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	background: url(../img/avatar-reviewer.jpg) no-repeat;
+	float: left;
+}
+.comment-cont{
+	margin-bottom: 1rem;
+}
+.comment-cont,
+.comment-time{
+	padding-left: 5rem;
+	display: block;
+}
+.comment-cont .nick-name{
+	color: #27b1ea;
+}
+.comment-area .comment-time{
+	color: #a3a3a3;
+}
+.main .more{
+	text-align: center;
+	padding-top: 4rem;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+}
+.main .more a{
+	color:#27b1ea;
+}

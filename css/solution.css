@@ -17,3 +17,56 @@
     color: grey;
     line-height: 28px;
 }
+.case-wrapper{
+	width: 792px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.case-category{
+	position: relative;
+    top: -40px;
+}
+.case-category h2{
+	width: 280px;
+	margin: 20px auto 50px;
+	text-align: center;
+	font-size: 40px;
+	background-color: #FFFFFF;
+}
+.case-category p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: grey;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+}
+.cases{
+	margin-top: 120px;
+    border-top: 1px solid #eee;
+    font-size: 0;
+}
+.cases .case-col{
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	padding: 0 50px 50px 120px;
+}
+.cases .case-col .case-title{
+    color: #383838;
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.cases .case-col .case-cont{
+    font-size: 14px;
+    color: grey;
+    margin: 0;
+    line-height: 28px;
+}
+.cases .case-col a{
+	color: #03A9F4;
+	font-size: 14px;
+}

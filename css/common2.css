@@ -3,7 +3,6 @@ body{
 }
 /*头样式*/
 .header{
-	min-width: 1000px;
 	position: fixed;
     top: 0;
     z-index: 103;
