@@ -1,9 +1,10 @@
-body{
-	min-width: 1000px;
-}
 /*头样式*/
+body{
+	padding-top: 50px;
+	background: url(../img/circle-bg.jpg) no-repeat;
+	background-position: center top; 
+}
 .header{
-	min-width: 1000px;
 	position: fixed;
     top: 0;
     z-index: 103;
@@ -21,10 +22,10 @@ body{
     padding-top: 0;
     height: 50px;
     border: none;
+    background-color: inherit;
 }
-
-.navbar-header{
-    float: left;
+.navbar-button{
+    margin-top: -5px;
 }
 .navbar-brand{
     width: 150px;
@@ -35,20 +36,20 @@ body{
     background-position: center center;
     background-size: contain;
 }
+.navbar-default .navbar-nav>li>a:hover{
+	color: #03A9F4;
+}
+@media only screen and (min-width:768px) {
+	.navbar-brand{
+	   margin-left: 5px !important;
+   	}
+}
 
 .navbar-collapse{
-	display: block!important;
-    height: auto!important;
-    padding-bottom: 0;
-    overflow: visible!important;
+    background-color: rgba(255,255,255,1);
 }
-.navbar-collapse>ul>li{
-	display: inline-block;
-}
-.navbar-button,
-.navbar-nav{
-	float: right;
-}
+
+
 .navbar-button>li>a,
 .navbar-nav>li>a{
 	display: inline-block;
@@ -57,7 +58,6 @@ body{
 
 .navbar-nav>li:hover{
 	background-color: rgba(255,255,255,0.2);
-	display: inline-block;
 }
 .navbar-button>li>a:hover,
 .navbar-nav>li>a:hover{
@@ -67,7 +67,6 @@ body{
 .navbar-button>li>a.login {
     border: 1px solid #000000;
     background-color: transparent;
-    margin: 9px 0 9px 10px;
     padding: 5px 20px;
     border-radius: 2px;
     transition: all 0.5s;
@@ -75,7 +74,6 @@ body{
 .header .navbar-button>li>a.login:hover{
     border: 1px solid #383838;
     background-color: #383838;
-    margin: 9px 0 9px 10px;
     padding: 5px 20px;
     border-radius: 2px;
     color: #FFFFFF;
@@ -91,17 +89,32 @@ body{
 .header .navbar-button>li>a.signup:hover{
 	background: -webkit-linear-gradient(left,#81E0FA,#3DA8F5);
 	background: linear-gradient(left,#81E0FA,#3DA8F5);
+	color: #FFFFFF;
 }
 
 .navbar-nav{
-	margin: 9px 0;
+	margin: 0;
+	margin-top: 10px;
 }
-.navbar-nav>li>a{
+.navbar-nav>li{
+	text-align: center;
+}
+.navbar-nav .dropdown .dropdown-menu>li{
+	text-align: center;
+}
+.navbar-nav .my-class{
+	padding: 0 20px;
+    margin: 6px 0;
+    border-right: 1px solid #e8e8e8;
+}
+.navbar-nav>li>a{ 
     font-size: 16px;
     padding: 6px 20px;
     border-radius: 3px;
 }
-
+.navbar-nav>li>a.dropdown-toggle{
+	padding-right: 0;
+} 
 /*登录后*/
 .navbar-button .my-class{
 	color: #000000;
@@ -146,7 +159,6 @@ body{
 }	
 /*底部样式*/
 .site-footer {
-	min-width: 1000px;
     background-color: #333;
     color: #fff;
 }
@@ -187,7 +199,6 @@ body{
 	text-indent: 3em;
 }
 .footer-nav .right{
-	width: 745px;
 	display: block;
 	vertical-align: top;
 	padding-top: 27px;
@@ -198,7 +209,6 @@ body{
 }
 .footer-nav .right .right-item{
 	display: inline-block;
-	width: 32%;
 	text-align: center;
 }
 .footer-nav .right .m-place{
@@ -239,9 +249,7 @@ body{
     min-height: 70px;
     text-align: center;
 }
-.page-index .container {
-    width: 1000px;
-}
+
 .site-footer .copyright .text, .site-footer .copyright .text a {
     color: #a6a6a6;
 }
@@ -249,6 +257,23 @@ body{
     display: inline-block;
     font-size: 16px;
     padding: 24px 0;
+}
+@media only screen and (max-width: 768px ) {
+	.site-footer .copyright .text {
+	    display: block;
+	    font-size: 16px;
+	    padding: 10px 0;
+	    margin-left: 0 !important;
+	}
+	.site-footer .row{
+		margin-right: 0;
+	}
+	.navbar-button .avatar {
+	  margin-left: 0;
+	}
+	.navbar-nav .my-class {
+	    border-right: none;
+	}
 }
 .site-footer .copyright .text + .text{
 	margin-left: 40px;
@@ -309,5 +334,8 @@ input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset;
-    }  
+}  
     
+.main{
+	padding-bottom: 30rem;
+}

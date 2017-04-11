@@ -1,0 +1,145 @@
+html{
+	font-size: 10px;
+}
+body{
+	background: url(../img/circle-bg.jpg) no-repeat;
+	background-position: center top;
+}
+.main{
+	padding-top:5rem;
+	padding-bottom: 30rem;
+}
+.main .title,
+.main .sub-title{
+	width: 100%;
+	text-align: center !important;
+	font-size: 4.2rem;
+	font-weight: 100;
+	display: inline-block;
+}
+.main .title{
+	margin-top: 10rem;
+}
+.main .sub-title{
+	font-size: 1.6rem;
+	color: grey;
+	margin-top: 5rem;
+	margin-bottom: 10rem; 
+}
+.comment-list .media-list .media .media-left img{
+	border-radius: 50%;
+}
+.comment-list{
+	max-width: 75.2rem;
+}
+.comment-list .media-time{
+		color: #888d9c;
+	}
+.comment-list .media2{
+		border-bottom: 1px solid #e2e3e7;
+}
+.comment-list .media2 + .media2{
+	padding-top: 3rem;
+}
+.media-img-list{
+	margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.media-img-list .col-xs-4 {
+		width: 14rem;
+	}
+	.comment-list .media-time{
+		padding: 1rem 0;
+		display: inline-block;
+	}
+	.comment-list .media-heading{
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.media .media-body>.operation {
+		min-width: 63.3rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.media-img-list{
+		margin-top: 1.5rem;
+		padding-right: 1.5rem;
+	}	
+	.comment-list .media-left .media-object{
+		width: 6.4rem;
+	}
+	.media2 .media-object{
+		width: 4rem !important;
+	}
+	.media2 .media-time{
+		display: inline-block;
+   		padding: 1rem 0;
+   		font-size: 1.2rem;
+	}	
+}
+.media-img-list .col-xs-4{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.media .operation{
+	padding: 1rem 0;
+}
+.media .operation span{
+	float: right;
+}
+
+.media2 .media-heading{
+	color: #27b1ea;
+}
+.media2 .media-left img {
+    border-radius: 0 !important;
+}
+.media-img-list .img-wrap{
+	background-position: center;
+	background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+	.media-img-list .img-wrap{
+		width: 14rem;
+		height: 14rem;
+		margin: 0.5rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.media-img-list .img-wrap{
+		width: 9rem;
+		height: 9rem;
+		margin: 0.2rem;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.media-img-list .img-wrap{
+		width: 7rem;
+		height: 7rem;
+		margin: 0.1rem;
+	}
+}
+.big-box{
+	position: fixed;
+	z-index: 2000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	text-align: center;
+	background-position:center;
+	background-size: contain;
+}
+
+.main .more{
+	text-align: center;
+	padding-top: 4rem;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+}
+.main .more a{
+	color:#27b1ea;
+}
