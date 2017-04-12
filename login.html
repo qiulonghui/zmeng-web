@@ -8,26 +8,34 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/respCom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
 	<body>
-		<header class="header">
-			<div class="header-container">
-				<div class="navbar">
+		<header class="header transparent" >
+		   <nav class="navbar navbar-default">
+				<div class="container-fluid"> 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"></a>
-					</div>
-					<div class="navbar-collapse clearfloat">
-						<ul class="navbar-button">
-							<li>
-								<a class="login" href="login.html">登录</a>
-							</li>
-							<li>
-								<a class="signup" href="register.html"><span>免费注册</span></a>
-							</li>
-						</ul>
-						<ul class="navbar-nav">
-							<li>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="#"></a>
+				</div>
+				
+				<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
+					  <ul class="nav navbar-nav navbar-right navbar-button">
+						<li>
+							<a class="login" href="login.html">登录</a>
+						</li>
+						<li>
+							<a class="signup" href="register.html"><span>免费注册</span></a>
+						</li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+	                     <li>
 								<a href="">功能</a>
 							</li>
 							<li>
@@ -45,10 +53,10 @@
 							<li>
 								<a href="">圈子</a>
 							</li>
-						</ul>
-					</div>
+	                  </ul>
+				   </div>
 				</div>
-			</div>
+			</nav>
 		</header>
 		<div class="cont_wrapper">
 			<div class="login-box">
@@ -80,16 +88,6 @@
 		<footer class="site-footer">
 			<div class="container">
 				<div class="footer-nav">
-					<div class="left">
-						<h4>联系方式</h4>
-						<p>广州众盟信息科技有限公司</p>
-						<p>电话：020-8558-2303</p>
-						<p>
-							地址：广州市天河区五山路科华街251号<span>乐天创意园B座5005单元</span>
-						</p>	
-						<p>网址：www.alimu.com</p>
-						<p>邮编：510663</p>
-					</div>
 					<div class="right">
 						<div class="right-item">
 							<span class="m-place rwm1"></span>
@@ -109,10 +107,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="copyright">
-				<div class="container">
-					<div class="copyandlang text">Copyright © 2017 allimu.com 版权所有</div>
-				</div>
+			<div class="copyright container-fluid">
+				<span class="copyandlang text col">Copyright © 2017 allimu.com 版权所有</span>
+				<span class="copyandlang text">地址：广州市天河区五山路科华街251号  乐天创意园B座5005单元</span>
+				<span class="copyandlang text">广州众盟信息科技有限公司</span>
+				<span class="copyandlang text">电话：020-8558-2303</span>	
 			</div>
 		</footer>
 		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>

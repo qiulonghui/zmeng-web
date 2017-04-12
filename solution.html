@@ -8,114 +8,160 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/respCom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/solution.css"/>
 	</head>
 	<body>
 		<header class="header transparent">
-			<div class="header-container">
-				<div class="navbar">
+		   <nav class="navbar navbar-default">
+				<div class="container-fluid"> 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#"></a>
-					</div>
-					<div class="navbar-collapse clearfloat">
-						<ul class="navbar-button">
-							<li>
-								<a class="my-class" href="">我的教室</a>
-							</li>
-							<li class="avatar-wrap"> 
-								<span class="avatar img-circle"></span>
-								<span class="caret"></span>
-								<ul class="use-list" style="display: none;">
-		                            <li><a href="userSet.html">设置</a></li>
-		                            <li><a href="order.html">我的订单</a></li>
-		                            <li><a href="product.html">可购产品和服务</a></li>
-		                            <li><a href="#">我的产品和服务</a></li>
-		                        </ul>
-							</li>
-						</ul>
-						<ul class="navbar-nav">
-							<li>
-								<a href="">功能</a>
-							</li>
-							<li>
-								<a href="">价格</a>
-							</li>
-							<li>
-								<a href="downapp.html">下载</a>
-							</li>
-							<li>
-								<a href="">解决方案</a>
-							</li>
-							<li>
-								<a href="">帮助</a>
-							</li>
-							<li>
-								<a href="">圈子</a>
-							</li>
-						</ul>
-					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="index.html"></a>
 				</div>
-			</div>
+				
+				<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
+					  <ul class="nav navbar-nav navbar-right nav-user">
+				       <li><a class="my-class" href="myClass.html">我的教室</a></li>
+				        <li class="dropdown navbar-button avatar-wrap">
+				          <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+				          	<span class="avatar img-circle"></span>
+							<span class="caret"></span>
+				          </a>
+				          <ul class="dropdown-menu ">
+				            <li><a href="userSet.html">设置</a></li>
+				            <li><a href="itemDetails.html">我的订单</a></li>
+				            <li><a href="product.html">可购产品和服务</a></li>
+				            <li><a href="myProduct.html">我的产品和服务</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+	                    <li>
+							<a href="funIntro.html">功能</a>
+						</li>
+						<li>
+							<a href="price.html">价格</a>
+						</li>
+						<li>
+							<a href="downapp.html">下载</a>
+						</li>
+						<li>
+							<a href="solution.html">解决方案</a>
+						</li>
+						<li>
+							<a href="help.html">帮助</a>
+						</li>
+						<li>
+							<a href="circle.html">圈子</a>
+						</li>
+	                  </ul>
+				   </div>
+				</div>
+			</nav>
 		</header>
 		<div class="main">
 			<div class="jumbotron text-center">
-				<h1>一站式企业协作解决方案</h1>
-				<p>无论你想制定公司战略目标，研发一款新产品，策划一场市场活动，还是招聘候选人，你只需要在 Teambition 上创建一个项目，邀请你的团队，就可以随时随地开始协作。Web、iOS、Android 全平台实时互通：Teambition 为你提供管理任务、安排日程、查找文件、即时讨论等团队所需要的一切协作功能。</p>
+				<h1>众云创造教育新体验</h1>
 			</div>
 			<div class="cases" >
 				<div class="case-category">
-					<h2>公司管理</h2>
-					<p>制定目标、追踪进展、回顾工作</p>
+					<h2>学校教育</h2>
 				</div>
 				<div  class="case-wrapper">
 					<div class="case-row">
-						<div class="case-col">
-							<p class="case-title">OKR 与目标管理</p>
-							<p class="case-cont">管理公司以及团队战略目标，打造公开透明的企业文化</p>
-							<a href="">阅读更多</a>
+						<div class="case-col icon1">
+							<p class="case-title">思想政治教育</p>	
 						</div>
-						<div class="case-col">
-							<p class="case-title">OKR 与目标管理</p>
-							<p class="case-cont">管理公司以及团队战略目标，打造公开透明的企业文化</p>
-							<a href="">阅读更多</a>
+						<div class="case-col icon2">
+							<p class="case-title">公共课教学通知</p>
+						</div>
+						<div class="case-col icon3">
+							<p class="case-title">团员教育</p>	
+						</div>
+						<div class="case-col icon4">
+							<p class="case-title">实习管理</p>
+						</div>
+						<div class="case-col icon5">
+							<p class="case-title">实训课程</p>	
+						</div>
+						<div class="case-col icon6">
+							<p class="case-title">班级学习</p>
+						</div>
+						<div class="case-col icon7">
+							<p class="case-title">专业学习</p>	
+						</div>
+						<div class="case-col icon8">
+							<p class="case-title">网络研修</p>
+						</div>
+						<div class="case-col icon9">
+							<p class="case-title">教师培训</p>	
+						</div>
+						<div class="case-col icon10">
+							<p class="case-title">名师工作室</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="cases">
 				<div class="case-category">
-					<h2>市场营销</h2>
-					<p>项目化新思维，规划你的对外品牌</p>
+					<h2>企业机构</h2>
 				</div>
 				<div  class="case-wrapper">
 					<div class="case-row">
-						<div class="case-col">
-							<p class="case-title">Campaign 筹划</p>
-							<p class="case-cont">确立明确的时间里程碑，保障策划案顺利推进</p>
-							<a href="">阅读更多</a>
+						<div class="case-col icon11">
+							<p class="case-title">技能培训</p>
 						</div>
-						<div class="case-col">
-							<p class="case-title">线下活动策划</p>
-							<p class="case-cont">活动再庞大，项目制管理也能让你有条有理，轻松落地</p>
-							<a href="">阅读更多</a>
+						<div class="case-col icon12">
+							<p class="case-title">岗前培训</p>				
 						</div>
-					</div>
-					<div class="case-row">
-						<div class="case-col">
-							<p class="case-title">Agency 互动</p>
-							<p class="case-cont">还在头痛如何与乙方沟通需求？从一个任务开始，实时追踪工作进展</p>
-							<a href="">阅读更多</a>
-						</div>
-						<div class="case-col">
-							<p class="case-title">OKR 与目标管理</p>
-							<p class="case-cont">管理公司以及团队战略目标，打造公开透明的企业文化</p>
-							<a href="">阅读更多</a>
+						<div class="case-col icon13">
+							<p class="case-title">部门培训</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="cases"></div>
-			<div class="cases"></div>
+			<div class="cases">
+				<div class="case-category">
+					<h2>政府机关</h2>
+				</div>
+				<div  class="case-wrapper">
+					<div class="case-row">
+						<div class="case-col icon14">
+							<p class="case-title">党建教育</p>
+						</div>
+						<div class="case-col icon15">
+							<p class="case-title">法律法规教育</p>				
+						</div>
+						<div class="case-col icon16">
+							<p class="case-title">政务教育</p>
+						</div>
+						<div class="case-col icon17">
+							<p class="case-title">社区终身学习</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cases">
+				<div class="case-category">
+					<h2 style="width: 100%;">与我们的客户一起，打造更好的工作方式</h2>
+				</div>
+				<ul class="partner-logo">
+					<li><img src="img/hnlg-icon.jpg"/></li>
+					<li><img src="img/hnsf-icon.jpg"/></li>
+					<li><img src="img/jndx-icon.jpg"/></li>
+					<li><img src="img/nssq-icon.jpg"/></li>
+					<li><img src="img/hnkm-icon.jpg"/></li>
+					<li><img src="img/tskj-icon.jpg"/></li>
+					<li><img src="img/pzxx-icon.jpg"/></li>
+					<li><img src="img/nljy-icon.jpg"/></li>
+				</ul>
+			</div>
 		</div>
 
 		<footer class="site-footer">
@@ -140,13 +186,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="copyright">
-				<div class="container">
-					<div class="copyandlang text">Copyright © 2017 allimu.com 版权所有</div>
-				</div>
+			<div class="copyright container-fluid">
+				<span class="copyandlang text col">Copyright © 2017 allimu.com 版权所有</span>
+				<span class="copyandlang text">地址：广州市天河区五山路科华街251号  乐天创意园B座5005单元</span>
+				<span class="copyandlang text">广州众盟信息科技有限公司</span>
+				<span class="copyandlang text">电话：020-8558-2303</span>	
 			</div>
 		</footer>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

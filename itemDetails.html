@@ -8,55 +8,63 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/respCom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/product.css"/>
 		<link rel="stylesheet" type="text/css" href="css/itemDetails.css"/>
 	</head>
 	<body>
 		<header class="header transparent">
-			<div class="header-container">
-				<div class="navbar">
+		   <nav class="navbar navbar-default">
+				<div class="container-fluid"> 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"></a>
-					</div>
-					<div class="navbar-collapse clearfloat">
-						<ul class="navbar-button">
-							<li>
-								<a class="my-class" href="">我的教室</a>
-							</li>
-							<li class="avatar-wrap"> 
-								<span class="avatar img-circle"></span>
-								<span class="caret"></span>
-								<ul class="use-list" style="display: none;">
-		                            <li><a href="userSet.html">设置</a></li>
-		                            <li><a href="order.html">我的订单</a></li>
-		                            <li><a href="product.html">可购产品和服务</a></li>
-		                            <li><a href="#">我的产品和服务</a></li>
-		                        </ul>
-							</li>
-						</ul>
-						<ul class="navbar-nav">
-							<li>
-								<a href="">功能</a>
-							</li>
-							<li>
-								<a href="">价格</a>
-							</li>
-							<li>
-								<a href="downapp.html">下载</a>
-							</li>
-							<li>
-								<a href="">解决方案</a>
-							</li>
-							<li>
-								<a href="">帮助</a>
-							</li>
-							<li>
-								<a href="">圈子</a>
-							</li>
-						</ul>
-					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="index.html"></a>
 				</div>
-			</div>
+				
+				<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
+					  <ul class="nav navbar-nav navbar-right nav-user">
+				       <li><a class="my-class" href="myClass.html">我的教室</a></li>
+				        <li class="dropdown navbar-button avatar-wrap">
+				          <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+				          	<span class="avatar img-circle"></span>
+							<span class="caret"></span>
+				          </a>
+				          <ul class="dropdown-menu ">
+				            <li><a href="userSet.html">设置</a></li>
+				            <li><a href="itemDetails.html">我的订单</a></li>
+				            <li><a href="product.html">可购产品和服务</a></li>
+				            <li><a href="myProduct.html">我的产品和服务</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+	                    <li>
+							<a href="funIntro.html">功能</a>
+						</li>
+						<li>
+							<a href="price.html">价格</a>
+						</li>
+						<li>
+							<a href="downapp.html">下载</a>
+						</li>
+						<li>
+							<a href="solution.html">解决方案</a>
+						</li>
+						<li>
+							<a href="help.html">帮助</a>
+						</li>
+						<li>
+							<a href="circle.html">圈子</a>
+						</li>
+	                  </ul>
+				   </div>
+				</div>
+			</nav>
 		</header>
 		
 		<div class="content">
@@ -118,16 +126,6 @@
 		<footer class="site-footer">
 			<div class="container">
 				<div class="footer-nav">
-					<div class="left">
-						<h4>联系方式</h4>
-						<p>广州众盟信息科技有限公司</p>
-						<p>电话：020-8558-2303</p>
-						<p>
-							地址：广州市天河区五山路科华街251号<span>乐天创意园B座5005单元</span>
-						</p>	
-						<p>网址：www.alimu.com</p>
-						<p>邮编：510663</p>
-					</div>
 					<div class="right">
 						<div class="right-item">
 							<span class="m-place rwm1"></span>
@@ -147,10 +145,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="copyright">
-				<div class="container">
-					<div class="copyandlang text">Copyright © 2017 allimu.com 版权所有</div>
-				</div>
+			<div class="copyright container-fluid">
+				<span class="copyandlang text col">Copyright © 2017 allimu.com 版权所有</span>
+				<span class="copyandlang text">地址：广州市天河区五山路科华街251号  乐天创意园B座5005单元</span>
+				<span class="copyandlang text">广州众盟信息科技有限公司</span>
+				<span class="copyandlang text">电话：020-8558-2303</span>	
 			</div>
 		</footer>
 		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>

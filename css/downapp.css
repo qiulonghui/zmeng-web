@@ -52,8 +52,11 @@
 }
 .content .txt-cont{
 	color: #868686;
-	font-size: 16px;
+	font-size: 20px;
 	text-indent: 2em;
 	line-height: 1.8;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
 }
  

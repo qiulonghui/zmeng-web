@@ -253,6 +253,11 @@ body{
 .site-footer .copyright .text + .text{
 	margin-left: 40px;
 }
+@media only screen and (max-width: 1350px) {
+	.site-footer .copyright .text + .text{
+		margin-left: 10px;
+	}
+}
 .site-footer .copyright .sns-info {
     float: right;
     margin: 15px 0;

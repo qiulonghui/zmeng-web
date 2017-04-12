@@ -21,44 +21,44 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-					<a class="navbar-brand" href="#"></a>
+					<a class="navbar-brand" href="index.html"></a>
 				</div>
 				
 				<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
 					  <ul class="nav navbar-nav navbar-right nav-user">
-				       <li><a class="my-class" href="">我的教室</a></li>
+				       <li><a class="my-class" href="myClass.html">我的教室</a></li>
 				        <li class="dropdown navbar-button avatar-wrap">
 				          <a href="#" class="dropdown-toggle " data-toggle="dropdown">
 				          	<span class="avatar img-circle"></span>
 							<span class="caret"></span>
 				          </a>
 				          <ul class="dropdown-menu ">
-				            <li><a href="#">设置</a></li>
-				            <li><a href="#">我的订单</a></li>
-				            <li><a href="#">可购产品和服务</a></li>
-				            <li><a href="#">我的产品和服务</a></li>
+				            <li><a href="userSet.html">设置</a></li>
+				            <li><a href="itemDetails.html">我的订单</a></li>
+				            <li><a href="product.html">可购产品和服务</a></li>
+				            <li><a href="myProduct.html">我的产品和服务</a></li>
 				          </ul>
 				        </li>
 				      </ul>
 				      <ul class="nav navbar-nav navbar-right">
-	                     <li>
-								<a href="">功能</a>
-							</li>
-							<li>
-								<a href="">价格</a>
-							</li>
-							<li>
-								<a href="downapp.html">下载</a>
-							</li>
-							<li>
-								<a href="">解决方案</a>
-							</li>
-							<li>
-								<a href="">帮助</a>
-							</li>
-							<li>
-								<a href="">圈子</a>
-							</li>
+	                    <li>
+							<a href="funIntro.html">功能</a>
+						</li>
+						<li>
+							<a href="price.html">价格</a>
+						</li>
+						<li>
+							<a href="downapp.html">下载</a>
+						</li>
+						<li>
+							<a href="solution.html">解决方案</a>
+						</li>
+						<li>
+							<a href="help.html">帮助</a>
+						</li>
+						<li>
+							<a href="circle.html">圈子</a>
+						</li>
 	                  </ul>
 				   </div>
 				</div>
@@ -220,17 +220,123 @@
 				<span class="copyandlang text">电话：020-8558-2303</span>	
 			</div>
 		</footer>
-		<div style="background-image: url(img/1.jpg); background-repeat: no-repeat; display: none;" class="big-box"></div>
+		<!--<div style="background-image: url(img/1.jpg); background-repeat: no-repeat; display: none;" class="big-box"></div>-->
+		<div class="big-box" style="display: none;"><img src="img/avatar-publisher.jpg"/></div>
 		
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(function(){
+//			$(function(){
+//				$(".img-wrap").click(function(){
+//					var minPicUrl = $(this).css("background-image");
+//					$(".big-box").css({"background-image":minPicUrl,"display":"block"});
+//				})
+//			})
+
+			function test(){
 				$(".img-wrap").click(function(){
-					$(this).css("background-image")
+					var minPicUrl = $(this).css("background-image");
+					var subPicUrl = minPicUrl.substring(5,minPicUrl.length-2)
+					var oImg=$(".big-box img")
+					oImg.attr("src",subPicUrl)
+					$('.big-box').show();
+					var imgHeight = oImg.outerHeight()
+					var imgWidth = oImg.outerWidth()
+					if(imgWidth>=imgHeight){
+						oImg.css({
+							"width":"100%",
+							"left":"0"
+						});
+						oImg.css({
+							"marginTop":-(oImg.outerHeight()/2)+"px"
+						});
+					}else{
+						oImg.css({
+							"heigh":"100%",
+							"left":"0"
+						});
+						oImg.css({
+							"marginTop":-(oImg.outerHeight()/2)+"px"
+						});
+					}
 				})
-			})
+				$(".big-box img,.big-box").click(function(){
+						$(".big-box").hide()
+					})
+			}
+			
+				function test2(){
+				$(".img-wrap").click(function(){
+					var minPicUrl = $(this).css("background-image");
+					var subPicUrl = minPicUrl.substring(5,minPicUrl.length-2)
+					var oImg=$(".big-box img")
+					oImg.attr("src",subPicUrl)
+					$('.big-box').show();
+					var imgHeight = oImg.outerHeight()
+					var imgWidth = oImg.outerWidth()
+					oImg.css({
+							"marginTop":-(oImg.outerHeight()/2)+"px",
+							"marginLeft":-(oImg.outerWidth()/2)+"px"
+					});	
+				})
+				$(".big-box img,.big-box").click(function(){
+						$(".big-box").hide()
+					})
+			}
+		
+	 //全兼容的 事件绑定  and  阻止默认事件
+      var EventUtil = {
+	          addHandler: function(element, type, handler){
+	             if (element.addEventListener){
+	                  element.addEventListener(type, handler, false);
+	              } else if(element.attachEvent){
+	                  element.attachEvent('on'+type, handler);
+	              } else {
+	                 element['on'+type] = handler;
+	             }
+	         },
+	 
+	         preventDefault: function(event){
+	             if(event.preventDefault){
+	                 event.preventDefault();
+	             }else{
+	                 event.returnValue = false;
+	             }
+	         }
+	     };
+	     var mediaQuery = {
+	         init:function(){
+	             var _this = this;
+	             _this.outputSize();
+	             EventUtil.addHandler(window,"resize",function(){
+	                 _this.outputSize(); //前面的this要单独保存，否则在这里this指的是window
+	             });
+	         },
+	         outputSize:function(){
+	             var result1 = window.matchMedia('(min-width:1200px)');
+	             var result2 = window.matchMedia('(min-width:992px)');
+	             var result3 = window.matchMedia('(min-width:768px)');
+	 			 //console.log(window.innerWidth);
+	             //console.log(result.matches);
+	             if(result1.matches) {
+	                 console.log(">=1200 大型设备 大台式电脑");
+	                 test2()
+	             }else if(result2.matches){
+	                 console.log("992=< <=1200 中型设备 台式电脑");
+	                 test2()
+	             }else if(result3.matches){
+	                 console.log("768<= <=992 小型设备 平板电脑");
+	                 test()
+	             }else{
+	                 console.log("<=768 超小设备 手机");
+	                 test()
+	             }
+	         }
+	     };
+	     window.onload = function(){
+	         mediaQuery.init();
+	     };
 		</script>
 	</body>
 </html>

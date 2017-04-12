@@ -1,4 +1,8 @@
-
+body{
+	padding-top: 50px;
+	background: url(../img/circle-bg.jpg) no-repeat;
+	background-position: center top; 
+}
 .main .title,
 .main .sub-title{
 	width: 100%;

@@ -3,7 +3,7 @@ $(function() {
 	$(".solution").hover(function() {
 		$(".solution-menu").toggle()
 	})
-	$(".avatar-wrap").hover(function() {
+	$(".avatar-wrap").click(function() {
 		$(".use-list").toggle()
 	})
 })

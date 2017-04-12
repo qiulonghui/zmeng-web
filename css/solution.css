@@ -1,14 +1,17 @@
 .main{
 	padding-top: 50px;
+	padding-bottom: 300px;
 }
 .main .jumbotron{
-	height: 460px;
+	height: 370px;
     text-align: center;
+    background: url(../img/solution-big.jpg) no-repeat;
 }
 .main .jumbotron h1 {
 	font-size: 48px;
     margin-top: 90px;
     margin-bottom: 50px;
+    color: #FFFFFF;
 }
 .main .jumbotron p {
     margin: 0 auto;
@@ -51,7 +54,56 @@
 	display: inline-block;
 	width: 50%;
 	font-size: 16px;
-	padding: 0 50px 50px 120px;
+	padding: 0 50px 80px 120px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 40px 0;
+    text-align: left;
+}
+.cases .icon1{
+	background-image: url(../img/icon-okr@2x.png);
+}
+.cases .icon2,
+.cases .icon13{
+	background-image: url(../img/icon-cooperation@2x.png);
+}
+.cases .icon3{
+	background-image: url(../img/icon-sprint@2x.png);
+}
+.cases .icon4{
+	background-image: url(../img/icon-research@2x.png);
+}
+.cases .icon5,
+.cases .icon11{
+	background-image: url(../img/icon-design@2x.png);
+}
+.cases .icon6{
+	background-image: url(../img/icon-recruiting@2x.png);
+}
+.cases .icon7,
+.cases .icon16{
+	background-image: url(../img/icon-bid@2x.png);
+}
+.cases .icon8{
+	background-image: url(../img/icon-campaign@2x.png);
+}
+.cases .icon9{
+	background-image: url(../img/icon-training@2x.png);
+}
+.cases .icon10{
+	background-image: url(../img/icon-agency@2x.png);
+}
+.cases .icon12{
+	background-image: url(../img/icon-issue@2x.png);
+}
+.cases .icon14{
+	background-image: url(../img/icon-marketing@2x.png);
+}
+.cases .icon15{
+	background-image: url(../img/icon-activity@2x.png);
+}
+.cases .icon17{
+	background-image: url(../img/icon-pipeline@2x.png);
 }
 .cases .case-col .case-title{
     color: #383838;
@@ -59,6 +111,7 @@
     line-height: 1.1;
     font-size: 28px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 .cases .case-col .case-cont{
     font-size: 14px;
@@ -69,4 +122,14 @@
 .cases .case-col a{
 	color: #03A9F4;
 	font-size: 14px;
+}
+.partner-logo{
+	width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.partner-logo li{
+	display: inline-block;
+	margin: 0 20px;
 }

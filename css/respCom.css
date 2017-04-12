@@ -1,9 +1,5 @@
 /*头样式*/
-body{
-	padding-top: 50px;
-	background: url(../img/circle-bg.jpg) no-repeat;
-	background-position: center top; 
-}
+
 .header{
 	position: fixed;
     top: 0;
@@ -43,6 +39,9 @@ body{
 	.navbar-brand{
 	   margin-left: 5px !important;
    	}
+   	.navbar-button>li>a.login {
+	   margin: 0 !important;
+	}
 }
 
 .navbar-collapse{

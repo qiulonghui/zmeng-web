@@ -1,9 +1,14 @@
 .jumbotron{
     position: relative;
-    height: 692px;
-    padding: 118px 30px;
+    height: 334px;
+    padding: 80px 30px;
     padding-bottom: 0;
     margin-bottom: 0;
+    background: url(../img/price-big.jpg) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin-top: 50px;
+    color: #FFFFFF;
 }
 .jumbotron .jumbotron-content{
 	text-align: center;
@@ -15,10 +20,12 @@
 	text-align: center;
 }
 .jumbotron .slogan{
-	width: 780px;
+	width: 420px;
 	margin: 0 auto;
 	font-size: 18px;
-    color: grey;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    line-height: 1.6;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -61,27 +68,111 @@
 .jumbotron .ysyy:hover{
 	background-color: #FFFFFF;
 }
-.main .slide{
-	padding-top: 94px;
+.main{
+	text-align: center;
+	padding: 150px 0 300px;
 }
-.main .partners-wrap {
-    padding: 78px 104px;
-    font-size: 0;
+.plan-version {
+    position: relative;
+    display: inline-block;
+    width: 406px;
+    padding: 0;
+    height: 908px;
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    box-shadow: 0 8px 30px rgba(0,0,0,.15);
+    vertical-align: top;
+    margin: 0 16px;
 }
-.main .permissions{
-	background-color:  #f7f7f7;
+.plan-version .plan-header {
+    position: relative;
+    padding: 29px 0;
+    height: 120px;
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #EEE;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
 }
-.main .permissions p{
-    max-width: 672px;
-    margin: 26px auto 24px;
+.plan-version .plan-header h4 {
+    font-size: 26px;
+    margin: 0;
+}
+.plan-version .plan-header .tips {
+    font-size: 14px;
     color: grey;
-    line-height: 1.7;
-    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
-.main .report p{
-	max-width: 672px;
-	color: gray;
-	margin: 26px auto 24px;
-	font-size: 18px;
-	line-height: 1.7;
+.plan-version .plan-price {
+    padding-top: 40px;
+    height: 260px;
+    border-bottom: 1px solid #EEE;
+}
+.plan-version .plan-price .price .currency {
+    font-size: 30px;
+    vertical-align: top;
+}
+.plan-version .plan-price .price .money {
+    font-size: 60px;
+    font-weight: 200;
+}
+.plan-version .plan-price a.btn-default{
+    background-color: #FFF;
+}
+.plan-version .plan-price a.btn-default {
+    border-color: #03A9F4;
+    color: #03A9F4;
+}
+.plan-version .plan-price a {
+    margin-top: 20px;
+    padding: 14px 35px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.plan-version .btn, .page-business .site-main .btn {
+    min-width: 156px;
+}
+.plan-version .plan-list {
+    padding: 20px 0;
+}
+.plan-version .plan-list>ul {
+    width: 200px;
+    margin: 0 auto;
+}
+.plan-version .plan-list>ul li {
+    position: relative;
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 20px;
+    padding-left: 13px;
+
+}
+.plan-version .plan-list>ul li:before {
+    content: ' ';
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: grey;
+}
+
+.plan-version.plan-enterprise {
+    border-color: #03A9F4;
+}
+.plan-version .know-more.enter-pro {
+    color: #383838;
+}
+.plan-version .know-more {
+    border-top: 1px solid #EEE;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    padding: 26px 0;
+    color: #03A9F4;
+    vertical-align: middle;
 }
