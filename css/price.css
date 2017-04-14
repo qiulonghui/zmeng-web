@@ -19,8 +19,16 @@
 	margin: 20px auto 25px auto;
 	text-align: center;
 }
+@media only screen and (max-width: 765px) {
+	.jumbotron .title{
+		width: 100%;
+		font-size: 28px;
+		margin: 20px auto 25px auto;
+		text-align: center;
+	}
+}
 .jumbotron .slogan{
-	width: 420px;
+	max-width: 420px;
 	margin: 0 auto;
 	font-size: 18px;
     color: #FFFFFF;
@@ -28,6 +36,18 @@
     line-height: 1.6;
     text-align: center;
     margin-bottom: 30px;
+}
+@media only screen and (max-width: 765px) {
+	.jumbotron .slogan{
+		max-width: 420px;
+		margin: 0 auto;
+		font-size: 12px;
+	    color: #FFFFFF;
+	    letter-spacing: 2px;
+	    line-height: 1.6;
+	    text-align: center;
+	    margin-bottom: 30px;
+	}
 }
  .btn-primary {
 	min-width: 156px;
@@ -72,10 +92,17 @@
 	text-align: center;
 	padding: 150px 0 300px;
 }
+@media only screen and (max-width: 765px) {
+	.main{
+		text-align: center;
+		padding: 75px 0 150px;
+	}
+}
 .plan-version {
     position: relative;
     display: inline-block;
-    width: 406px;
+    width: 100%;
+    max-width: 406px;
     padding: 0;
     height: 908px;
     border-radius: 6px;
@@ -83,6 +110,20 @@
     box-shadow: 0 8px 30px rgba(0,0,0,.15);
     vertical-align: top;
     margin: 0 16px;
+}
+@media only screen and (max-width:768px ) {
+	.plan-version {
+	    margin: 0;
+	}
+}
+@media only screen and (max-width:767px ) {
+	.plan-version {
+	    margin: 0;
+	    height: 100%;
+	}
+	.plan-enterprise{
+		margin-top: 40px;
+	}
 }
 .plan-version .plan-header {
     position: relative;
@@ -108,6 +149,12 @@
     height: 260px;
     border-bottom: 1px solid #EEE;
 }
+@media only screen and (max-width: 768px) {
+	.plan-version .plan-price {
+	    padding-top: 20px;
+	    height: 220px;
+	}
+}
 .plan-version .plan-price .price .currency {
     font-size: 30px;
     vertical-align: top;
@@ -131,6 +178,11 @@
 }
 .plan-version .btn, .page-business .site-main .btn {
     min-width: 156px;
+}
+@media only screen and (max-width: 765px) {
+	.plan-version .btn, .page-business .site-main .btn {
+	    width: 65%;
+	}
 }
 .plan-version .plan-list {
     padding: 20px 0;
@@ -165,14 +217,28 @@
 .plan-version .know-more.enter-pro {
     color: #383838;
 }
+.blue-header{
+	background: linear-gradient(#81E0FA,#5DB9F6 60%,#33ADF4);
+    background: -webkit-gradient(linear,top,bottom,#81E0FA),color-stop(.6,#5DB9F6),to(#33ADF4);
+    background: -moz-linear-gradient(top,#81E0FA,#5DB9F6 60%,#33ADF4);
+    background: -webkit-linear-gradient(top,#81E0FA,#5DB9F6 60%);
+    background: -o-linear-gradient(top,#81E0FA,#5DB9F6 60%,#33ADF4);
+    color: #FFFFFF;
+}
+.blue-header p{
+	color: #FFFFFF !important;
+}
 .plan-version .know-more {
     border-top: 1px solid #EEE;
     display: block;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     font-size: 16px;
     padding: 26px 0;
     color: #03A9F4;
     vertical-align: middle;
+}
+@media only screen and (max-width: 765px) {
+	.plan-version .know-more {
+	    font-size: 12px;
+	}
 }

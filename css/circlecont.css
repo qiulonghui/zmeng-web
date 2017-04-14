@@ -7,7 +7,6 @@ body{
 }
 .main{
 	padding-top:5rem;
-	padding-bottom: 30rem;
 }
 .main .title,
 .main .sub-title{
@@ -26,17 +25,36 @@ body{
 	margin-top: 5rem;
 	margin-bottom: 10rem; 
 }
+@media only screen and (max-width: 768px) {
+	.main .title{
+		margin-top: 3rem;
+		font-size: 3rem;
+	}
+	.main .sub-title{
+		font-size: 1.4rem;
+		margin-top: 2rem;
+		margin-bottom: 6rem; 
+	}
+}
 .comment-list .media-list .media .media-left img{
 	border-radius: 50%;
 }
 .comment-list{
 	max-width: 75.2rem;
 }
+@media only screen and (max-width: 768px) {
+	.comment-list{
+		max-width: 65.2rem;
+	}
+}
 .comment-list .media-time{
 		color: #888d9c;
 	}
 .comment-list .media2{
 		border-bottom: 1px solid #e2e3e7;
+}
+.comment-list .media2:last-child{
+		border-bottom: none;
 }
 .comment-list .media2 + .media2{
 	padding-top: 3rem;
@@ -62,13 +80,16 @@ body{
 		min-width: 63.3rem;
 	}
 }
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	
+}
 @media only screen and (max-width: 768px) {
 	.media-img-list{
 		margin-top: 1.5rem;
 		padding-right: 1.5rem;
 	}	
 	.comment-list .media-left .media-object{
-		width: 6.4rem;
+		width: 5.4rem;
 	}
 	.media2 .media-object{
 		width: 4rem !important;
@@ -78,6 +99,11 @@ body{
    		padding: 1rem 0;
    		font-size: 1.2rem;
 	}	
+}
+@media only screen and (max-width: 400px) {
+	.comment-list .media-left .media-object{
+		width: 3.4rem;
+	}
 }
 .media-img-list .col-xs-4{
 	padding-left: 5px;

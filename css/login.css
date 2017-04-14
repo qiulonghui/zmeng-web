@@ -1,23 +1,18 @@
 /*登录*/
 body{
-	background-color: #f1f3f5;
+	background-color: #fff ;
 }
 .cont_wrapper{
 	width: 100%;
 	min-height: 512px;
-	padding: 30px 0;
 	margin-top: 50px;
 	padding-bottom: 180px;
 }
 .login-box {
-    width: 398px;
-    border: 1px solid #dfe2e7;
-    background: #FFF;
+    max-width: 398px;
     margin: 0 auto;
-    padding: 20px 20px 45px 20px;
-    position: relative;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     box-sizing: content-box;
+    padding-top: 50px;
 }
 .login-box .login-title {
     margin-top: 35px;
@@ -63,7 +58,8 @@ body{
     background-size: auto 18px;
 }
 .login-box form .login-txt{
-    width: 288px;
+	width: 100%;
+    max-width: 330px;
     height: 49px;
     padding-left: 40px;
     border: 1px solid #dcdcde;
@@ -73,7 +69,6 @@ body{
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(217, 218, 226);  
-    box-sizing: content-box; 
 }
 
 .login-box form .login-info {
@@ -93,19 +88,28 @@ body{
     line-height: 50px;
     text-align: center;
     font-size: 21px;
+    font-weight: 100;
     color: #FFF;
-    background: #646c90;
     border-radius: 5px;
     margin-top: 6px;
     border: 0;
     box-shadow: none;
     cursor: pointer;
     outline: 0;
+    background-color: #03A9F4;
+    border-color: #03A9F4;
 }
 .login-box form .login-btn:hover {
-    background: #50567a;
+    background: #0ab1fc;
 }
+
 /*注册*/
+.login-box form .regist-btn{
+	background-color: #fd7a11;
+}
+.login-box form .regist-btn:hover{
+	background-color: #fe8625;
+}
 .login-box .login-title .login-title-subhead {
     font-size: 24px;
     margin-left: 20px;
@@ -116,7 +120,8 @@ body{
     position: relative;
 }
 .login-box form .code-verify .login-code {
-    width: 158px;
+	width: 42%;
+    max-width: 158px;
     height: 49px;
     padding-left: 40px;
     border: 1px solid #dcdcde;
@@ -125,17 +130,28 @@ body{
     color: #333;
 	box-sizing: content-box;
 }
+@media only screen and (min-width: 768px) {
+	.login-box form .code-verify .login-code {
+		width: 60%;
+	}
+}
 .login-box form .code-verify .get-code-btn  {
-    width: 120px;
+	width: 40%;
+    max-width: 120px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background: #dcdcde;
+    background-color: #03A9F4;
+    border-color: #03A9F4;
+    color: #FFF;
     cursor: pointer;
     float: right;
     border-radius: 5px;
     font-size: 14px;
     border: 0;
+}
+.login-box form .code-verify .get-code-btn:hover{
+	 background-color: #0ab1fc;
 }
 .login-box form .login-info {
     line-height: 24px;
@@ -146,7 +162,8 @@ body{
     color: #8190db;
 }
 .login-box form select.type{
-	width: 330px;
+	width: 100%;
+	max-width: 330px;
     height: 49px;
     padding-left: 20px;
     border: 1px solid #dcdcde;

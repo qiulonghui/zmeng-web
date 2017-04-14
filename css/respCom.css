@@ -30,7 +30,7 @@
     background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: auto;
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #03A9F4;
@@ -41,7 +41,11 @@
    	}
    	.navbar-button>li>a.login {
 	   margin: 0 !important;
+	   font-size: 14px;
 	}
+	.navbar-button>li>a.signup{
+		font-size: 14px;
+	} 
 }
 
 .navbar-collapse{
@@ -70,6 +74,14 @@
     border-radius: 2px;
     transition: all 0.5s;
 }
+@media only screen and (max-width: 767px) {
+	.navbar-button>li>a.login {
+		width: 100%;
+	    padding: 8px 20px;
+	    border-radius: 2px;
+	    transition: all 0.5s;
+	}
+}
 .header .navbar-button>li>a.login:hover{
     border: 1px solid #383838;
     background-color: #383838;
@@ -85,6 +97,17 @@
     margin-left: 10px;
     border-radius: 2px;
 }
+@media only screen and (max-width: 767px) {
+	.navbar-button>li>a.signup{
+	   padding: 8px 20px;
+	   width: 100%;
+	   margin: 10px 0;
+	   margin-left: 0 !important;   
+	}
+	.header .navbar-button>li>a.login:hover{
+	    padding: 8px 20px;
+	}
+}
 .header .navbar-button>li>a.signup:hover{
 	background: -webkit-linear-gradient(left,#81E0FA,#3DA8F5);
 	background: linear-gradient(left,#81E0FA,#3DA8F5);
@@ -95,9 +118,18 @@
 	margin: 0;
 	margin-top: 10px;
 }
+@media only screen and (max-width: 767px) {
+	.items-wrap{
+		display: flex;
+		display: -webkit-flex;
+		flex-direction: column-reverse;
+		-webkit-flex-direction: column-reverse;
+	}
+}
 .navbar-nav>li{
 	text-align: center;
 }
+
 .navbar-nav .dropdown .dropdown-menu>li{
 	text-align: center;
 }
@@ -110,6 +142,20 @@
     font-size: 16px;
     padding: 6px 20px;
     border-radius: 3px;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav{
+		margin-top:0;
+	}
+	.navbar-nav>li>a{	    
+	    padding: 15px 10px;
+	    display: block;
+	}
+}
+@media only screen and (width: 768px) {
+	.navbar-nav>li>a{	    
+	    padding: 6px 10px;
+	}
 }
 .navbar-nav>li>a.dropdown-toggle{
 	padding-right: 0;
@@ -337,4 +383,9 @@ select:-webkit-autofill {
     
 .main{
 	padding-bottom: 30rem;
+}
+@media only screen and (max-width: 768px) {
+	.main{
+		padding-bottom: 3rem;
+	}
 }

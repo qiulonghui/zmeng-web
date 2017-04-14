@@ -4,10 +4,11 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
+		<title>首页 | 众云创造教育新体验</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/respCom.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,137 +20,140 @@
 
 	<body>
 		<header class="header transparent">
-			<div class="header-container">
-				<div class="navbar">
+		   <nav class="navbar navbar-default">
+				<div class="container-fluid"> 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"></a>
-					</div>
-					<div class="navbar-collapse clearfloat">
-						<ul class="navbar-button">
-							<li>
-								<a class="login" href="login.html">登录</a>
-							</li>
-							<li>
-								<a class="signup" href="register.html"><span>免费注册</span></a>
-							</li>
-						</ul>
-						<ul class="navbar-nav">
-							<li>
-								<a href="funIntro.html">功能</a>
-							</li>
-							<li>
-								<a href="price.html">价格</a>
-							</li>
-							<li>
-								<a href="downapp.html">下载</a>
-							</li>
-							<li>
-								<a href="solution.html">解决方案</a>
-							</li>
-							<li>
-								<a href="help.html">帮助</a>
-							</li>
-							<li>
-								<a href="circle.html">圈子</a>
-							</li>
-						</ul>
-					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="index.html"></a>
+				    </div>
+				
+					<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
+					 	<div class="items-wrap">
+					 		 <ul class="nav navbar-nav navbar-right navbar-button">
+								<li>
+									<a class="login" href="login.html">登录</a>
+								</li>
+								<li>
+									<a class="signup" href="register.html"><span>免费注册</span></a>
+								</li>
+						      </ul>
+						      <ul class="nav navbar-nav navbar-right">
+			                    <li>
+									<a href="funIntro.html">功能</a>
+								</li>
+								<li>
+									<a href="price.html">价格</a>
+								</li>
+								<li>
+									<a href="downapp.html">下载</a>
+								</li>
+								<li>
+									<a href="solution.html">解决方案</a>
+								</li>
+								<li>
+									<a href="circle.html">学友圈</a>
+								</li>
+			                  </ul>
+					 	</div>
+				    </div>
 				</div>
-			</div>
+			</nav>
 		</header>
-		<div class="main">
-			<div class="jumbotron">
-				<div class="ad_wrap">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<!-- Indicators -->
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-						<!-- Wrapper for slides -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<div class="img_wrap img1"></div>
-							</div>
-							<div class="item">
-								<div class="img_wrap img2"></div>
-							</div>
-							<div class="item">
-								<div class="img_wrap img3"></div>
-							</div>
+		<div class="jumbotron">
+			<div class="ad_wrap">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="img_wrap img1"></div>
+						</div>
+						<div class="item">
+							<div class="img_wrap img2"></div>
+						</div>
+						<div class="item">
+							<div class="img_wrap img3"></div>
 						</div>
 					</div>
-					<!--轮播图结束-->
 				</div>
-				<div class="container">
-					<div class="intro">
-						<h1 class="title slogan">创造教育新体验</h1></div>
-					<div class="input-button-group">
-						<input class="input-lg username" placeholder="你的工作邮箱或手机号" type="text">
-						<a href="register.html" class="btn btn-primary btn-lg free-signup" >免费注册</a>
-					</div>
-					<a href="login.html" class="big-login">登录</a>
-				</div>
+				<!--轮播图结束-->
 			</div>
-			<div class="features">
-				<div>
+			<div class="container">
+				<div class="intro">
+					<h1 class="title slogan">创造教育新体验</h1></div>
+				<div class="input-button-group">
+					<input class="input-lg username" placeholder="你的工作邮箱或手机号" type="text">
+					<a href="register.html" class="btn btn-primary btn-lg free-signup" >免费注册</a>
+				</div>
+				<a href="login.html" class="big-login">登录</a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="features container">
+				<div class="container">
 					<h1 class="title">为你提供了教学的一切</h1>
-					<div class="feature_cont">
-						<div class="feature_wrap">
+					<div class="feature_cont row">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon project"></div>
 							<h4>移动实训</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon task"></div>
 							<h4>移动学习</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon wall"></div>
 							<h4>分享讨论</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon file"></div>
 							<h4>数据分析</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon event"></div>
 							<h4>移动IM</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon bookkeeping"></div>
 							<h4>教学通知</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon news"></div>
 							<h4>学生管理</h4>
 						</div>
-						<div class="feature_wrap">
+						<div class="feature_wrap col-xs-6 col-sm-3">
 							<div class="feature-icon review"></div>
 							<h4>教务管理</h4>
 						</div>
-					</div>
-					<div class="ghost_wrap">
-						<a href="" class="ghost">查看详细功能介绍</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<footer class="site-footer">
 			<div class="container">
-				<div class="footer-nav">
+				<div class="footer-nav row">
 					<div class="right">
-						<div class="right-item">
+						<div class="right-item col-xs-12 col-sm-4">
 							<span class="m-place rwm1"></span>
 							<span class="icon-place sb-icon1"></span>
 							<p>公众号</p>
 						</div>
-						<div class="right-item">
+						<div class="right-item col-xs-12 col-sm-4">
 							<span class="m-place rwm2"></span>
 							<span class="icon-place sb-icon2"></span>
 							<p>iOS</p>
 						</div>
-						<div class="right-item">
+						<div class="right-item col-xs-12 col-sm-4">
 							<span class="m-place rwm3"></span>
 							<span class="icon-place sb-icon3"></span>
 							<p>安卓</p>
@@ -159,13 +163,13 @@
 			</div>
 			<div class="copyright container-fluid">
 				<span class="copyandlang text col">Copyright © 2017 allimu.com 版权所有</span>
-				<span class="copyandlang text">地址：广州市天河区五山路科华街251号  乐天创意园B座5005单元</span>
+				<span class="copyandlang text">地址：广州市天河区五山路科华街251号<br class="visible-xs" />  乐天创意园B座5005单元</span>
 				<span class="copyandlang text">广州众盟信息科技有限公司</span>
 				<span class="copyandlang text">电话：020-8558-2303</span>	
 			</div>
 		</footer>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

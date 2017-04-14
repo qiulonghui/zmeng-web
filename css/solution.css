@@ -2,6 +2,11 @@
 	padding-top: 50px;
 	padding-bottom: 300px;
 }
+@media only screen and (max-width: 768px) {
+	.main{
+		padding-bottom: 100px;
+	}
+}
 .main .jumbotron{
 	height: 370px;
     text-align: center;
@@ -9,9 +14,17 @@
 }
 .main .jumbotron h1 {
 	font-size: 48px;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 50px;
     color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+	.main .jumbotron{
+		height: 260px;
+	}
+	.main .jumbotron h1 {
+		font-size: 32px;
+	}
 }
 .main .jumbotron p {
     margin: 0 auto;
@@ -21,9 +34,15 @@
     line-height: 28px;
 }
 .case-wrapper{
-	width: 792px;
+	max-width: 792px;
 	margin: 0 auto;
 	margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+	.case-wrapper{
+		max-width: 492px;
+		margin-top: -30px;
+	}
 }
 .case-category{
 	position: relative;
@@ -35,6 +54,18 @@
 	text-align: center;
 	font-size: 40px;
 	background-color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+	.case-category {
+	    top: -35px;
+	}
+	.case-category h2{
+		width: 180px;
+		margin: 20px auto 50px;
+		text-align: center;
+		font-size: 26px;
+		background-color: #FFFFFF;
+	}
 }
 .case-category p{
     max-width: 500px;
@@ -50,15 +81,33 @@
     border-top: 1px solid #eee;
     font-size: 0;
 }
+@media only screen and (max-width: 768px) {
+	.cases{
+		margin-top: 60px;
+	    border-top: 1px solid #eee;
+	    font-size: 0;
+	}
+}
 .cases .case-col{
 	display: inline-block;
-	width: 50%;
 	font-size: 16px;
 	padding: 0 50px 80px 120px;
     background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: 40px 0;
     text-align: left;
+}
+@media only screen and (max-width: 768px) {
+	.cases .case-col{
+		display: inline-block;
+		width: 100%;
+		font-size: 16px;
+		padding: 0 0 40px 40px;
+	    background-size: 40px 40px;
+	    background-repeat: no-repeat;
+	    background-position: 0 0;
+	    text-align: left;
+	}
 }
 .cases .icon1{
 	background-image: url(../img/icon-okr@2x.png);
@@ -113,6 +162,15 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
+@media only screen and (max-width: 768px) {
+	.cases .case-col .case-title{
+	    font-size: 16px;
+	    margin-top: 10px;
+	    margin-left: 5px;
+	    text-align: center;
+	}
+	
+}
 .cases .case-col .case-cont{
     font-size: 14px;
     color: grey;
@@ -124,7 +182,7 @@
 	font-size: 14px;
 }
 .partner-logo{
-	width:1000px;
+	max-width:1000px;
 	margin: 0 auto;
 	overflow: hidden;
 	text-align: center;
@@ -132,4 +190,24 @@
 .partner-logo li{
 	display: inline-block;
 	margin: 0 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.partner-logo li{
+		display: inline-block;
+		margin: 0;
+		min-height: 120px;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.partner-logo{
+		text-align: center;
+	}
+	.partner-logo li{
+		display: inline;
+		float: none;
+		margin: 0;
+		min-height: 120px;
+		width: auto;
+	}
 }
