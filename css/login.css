@@ -150,6 +150,12 @@ body{
     font-size: 14px;
     border: 0;
 }
+@media only screen and (max-width: 330px) {
+	.login-box form .code-verify .get-code-btn  {
+		width: 36%;
+		max-width: 110px;
+	}
+}
 .login-box form .code-verify .get-code-btn:hover{
 	 background-color: #0ab1fc;
 }

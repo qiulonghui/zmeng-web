@@ -93,9 +93,9 @@
 	color: #868686;
 	font-size: 20px;
 	line-height: 1.8;
-	text-align: center;
-	max-width: 800px;
+	max-width: 920px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
  @media only screen and (max-width: 768px) {
  	.content .txt-cont{

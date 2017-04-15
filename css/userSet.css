@@ -6,18 +6,42 @@
 	margin-top:50px;
 	padding-bottom: 120px;
 }
+@media only screen and (max-width: 768px) {
+	.bg-color{
+		width: 100%;
+		background-color: #fbfbfb;
+		overflow: hidden;
+		margin-top:50px;
+		padding-bottom: 30px;
+	}
+}
 .content{
-	width: 1144px;
+	max-width: 1144px;
 	height: 800px;
 	margin: 0 auto;
 	color: #666;
 	padding-top: 76px;	
+	overflow: hidden;
+}
+@media only screen and (max-width: 768px) {
+	.content{
+		padding-top: 0px;	
+		height:auto;
+	}
 }
 .content .menu{
 	width: 28%;
 	border: 1px solid #DDDDDD;
 	float: left;
 	background-color: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+	.content .menu{
+		width: 100%;
+		border-right: 0px solid #DDDDDD;
+		border-left: 0px solid #DDDDDD;
+		background-color: #FFFFFF;
+	}
 }
 .content .menu .list{
 	width: 100%;
@@ -27,13 +51,35 @@
 	color: #333333;
 	cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+		.content .menu .list{
+			width: 25%;
+			float: left;
+			text-indent: 0;
+			text-align: center;
+			font-size: 14px;
+			line-height: 35px;
+	}
+}
 .content .menu .list + .list{
 	border-top: 1px solid #DDDDDD;
 }
+@media only screen and (max-width: 768px) {
+	.content .menu .list + .list{
+		border-top-width: 0;
+	}
+}
 .content .menu .list.active{
-	border-left: 5px solid #515981;
+	border-left: 5px solid #03A9F4;
 	text-indent: 45px;
-	color: #515981;
+    color: #03A9F4;
+}
+@media only screen and (max-width: 768px) {
+	.content .menu .list.active{
+		border-bottom: 2px solid #03A9F4;
+		border-left-width:0;
+		text-indent: 0;
+	}
 }
 .content .cont_right{
     width: 70%;
@@ -44,6 +90,12 @@
     border: 1px solid #DDDDDD;
     margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+	.content .cont_right{
+	    width: 100%;
+	    border: 0px solid #DDDDDD;
+	}
+}
 /*tab1*/
 .content .cont_right .tab{
 	width: 100%;
@@ -51,6 +103,15 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+	.content .cont_right .tab{
+		width: 100%;
+	    height: 90%;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    padding-top: 50px;
+	}
 }
 .content .cont_right .tab .con-row{
 	width: 100%;
@@ -68,6 +129,13 @@
     font-size: 15px;
     float: left;
 }
+@media only screen and (max-width: 768px) {
+	.content .cont_right .tab .con-row span,
+	.content .con-pic span{
+		width: 26%;
+	    font-size: 14px;
+	}
+}
 .content .cont_right .tab .con-row .txt_bar{
 	width: 80%;
     height: 100%;
@@ -75,9 +143,16 @@
     float: left;
     position: relative;
 }
+@media only screen and (max-width: 768px) {
+	.content .cont_right .tab .con-row .txt_bar{
+	    padding-left: 10px;
+	    width: 70%;
+	}
+}
 .content .cont_right .tab .con-row .txt_bar input,
 .content .cont_right .tab .con-row .txt_bar select{
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
     height: 100%;
     padding-left: 10px;
     border: 1px solid #ced2d5;
@@ -95,25 +170,25 @@
 .content .cont_right .tab .con-row a:link, 
 .content .cont_right .tab .con-row a:visited, 
 .content .cont_right .tab .con-row a:active{
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
     height: 100%;
     display: block;
-    margin: 50px auto;
-    background: #646c90;
+    background: #03A9F4;
     text-align: center;
     line-height: 50px;
     font-size: 18px;
     color: white;
     border-radius: 4px;
-    margin-left: 140px;	
 }
+
 .content .con-pic{
 	width: 100%;
     margin-bottom: 40px;
    
 }
 .content .cont_right .tab .con-row a:hover {
-    background: #50567a;
+    background: #0295d8;
 }
 .content .img_div{
 	overflow: hidden;
@@ -164,7 +239,11 @@
     margin: auto;
     margin-top: 100px;
 }
-
+@media only screen and (max-width: 768px) {
+	.content .cont_right .tab .avatar{
+	    margin-top: 20px;
+	}
+}
 .content .cont_right .tab .avatar img{
 	max-width: 100%;
     height: auto;
@@ -172,16 +251,7 @@
     vertical-align: middle;
     border: 1px solid #CCCCCC;
 }
-.modal-body {
-    padding: 40px;
-}
-.modal-content {
-    z-index: 99999;
-    top: 100px;
-}
-.modal-lg {
-    width: 750px;
-}
+
 /*模态框 上传图片*/
 #fileinputDiv {
     width: 162px;
@@ -237,7 +307,7 @@
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    background: #646c90;
+    background: #03A9F4;
     border: none;
     color: white;
     font-size: 18px;
@@ -267,7 +337,7 @@
 	display: block;
 	width: 30%;
     height: 45px;
-    background: #646c90;
+    background: #03A9F4;
     margin: 40px auto;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -277,8 +347,16 @@
     font-size: 16px;
     color: white;
 }
+@media only screen and (max-width: 768px) {
+	.content .cont_right .tab #onload:link, 
+	.content .cont_right .tab #onload:visited, 
+	.content .cont_right .tab #onload:active{
+		width: 60%;
+		max-width: 168px;
+	}
+}
 .content .cont_right .tab #onload:hover{
-	background: #50567a;
+	background: #0295d8;
 }
 /*tab3*/
 .content .cont_right .tab .con-row .txt_bar input#verifycode {
@@ -297,4 +375,9 @@
 }
 .content .cont_right .tab .con-row .txt_bar .fl{
 	float: left;
+}
+.tab-title{
+	padding-left: 50px;
+	font-size: 18px;
+	padding-bottom: 30px;
 }

@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
 		<title>校园生活 | 众云创造教育新体验</title>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/respCom.css" />
 		<link rel="stylesheet" type="text/css" href="css/circlecont.css"/>
+		<link rel="stylesheet" type="text/css" href="plug/photoswipt/css/photoswipe.css"/>
+		<link rel="stylesheet" type="text/css" href="plug/photoswipt/css/default-skin/default-skin.css"/>
 	</head>
 	<body>
 		<header class="header transparent">
@@ -33,7 +35,7 @@
 								<span class="caret"></span>
 					          </a>
 					          <ul class="dropdown-menu ">
-					            <li><a href="userSet.html">设置</a></li>
+					            <li><a href="userSet-student.html">设置</a></li>
 					            <li><a href="#">教务</a></li>				
 					          </ul>
 					        </li>
@@ -52,7 +54,7 @@
 								<a href="solution.html">解决方案</a>
 							</li>
 							<li>
-								<a href="circle.html">学友圈</a>
+								<a class="active" href="circle.html">学友圈</a>
 							</li>
 		                 </ul>
 				    </div>
@@ -78,10 +80,22 @@
 				      <div>
 				      	甘苦与共，是浮生茶，也是人生路。
 				      </div>
-				      <ul class="media-img-list clearfix">
-				      	<li style="background:url(img/pic1.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
-				      	<li style="background:url(img/pic1.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
-				      	<li style="background:url(img/pic2.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
+				       <ul class="media-img-list clearfix my-gallery">				      	
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic1.jpg" data-size="800x1142">
+							  <img src="img/pic1.jpg" alt="Image description" />
+							</a>
+						  </figure>				    
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic1.jpg" data-size="800x1142">
+							  <img src="img/pic1.jpg" alt="Image description" />
+							</a>
+						  </figure>				      				      
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic2.jpg" data-size="800x1142">
+							  <img src="img/pic2.jpg" alt="Image description" />
+							</a>
+						  </figure>			      	
 				      </ul>
 				     
 				      <div class="operation clearfix"><span style="margin-left: 1rem;">赞(20)</span><span class="pl-bt" style="cursor: pointer;">评论(15)</span></div>
@@ -138,10 +152,22 @@
 				      	甘苦与共，是浮生茶，也是人生路。
 				      	甘苦与共，是浮生茶，也是人生路。
 				      </div>
-				      <ul class=" media-img-list clearfix">
-				      	<li style="background:url(img/pic1.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
-				      	<li style="background:url(img/pic1.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
-				      	<li style="background:url(img/pic2.jpg) no-repeat;" class="img-wrap col-xs-4"></li>
+				     <ul class="media-img-list clearfix my-gallery">				      	
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic1.jpg" data-size="800x1142">
+							  <img src="img/pic1.jpg" alt="Image description" />
+							</a>
+						  </figure>				    
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic1.jpg" data-size="800x1142">
+							  <img src="img/pic1.jpg" alt="Image description" />
+							</a>
+						  </figure>				      				      
+				          <figure class="img-wrap">
+							<a class="img-wrap" href="img/pic2.jpg" data-size="800x1142">
+							  <img src="img/pic2.jpg" alt="Image description" />
+							</a>
+						  </figure>			      	
 				      </ul>
 				      <div class="operation clearfix"><span style="margin-left: 1rem;">赞(20)</span><span class="pl-bt" style="cursor: pointer;">评论(15)</span></div>
 				      <div class="pinglunqu" style="display: none;">
@@ -216,122 +242,58 @@
 			</div>
 		</footer>
 		<!--<div style="background-image: url(img/1.jpg); background-repeat: no-repeat; display: none;" class="big-box"></div>-->
-		<div class="big-box" style="display: none;"><img src="img/avatar-publisher.jpg"/></div>
 		
+		
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<!-- Background of PhotoSwipe. 
+		         It's a separate element, as animating opacity is faster than rgba(). -->
+			<div class="pswp__bg"></div>
+			<!-- Slides wrapper with overflow:hidden. -->
+			<div class="pswp__scroll-wrap">
+				<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+				<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+				<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+				<div class="pswp__ui pswp__ui--hidden">
+					<div class="pswp__top-bar">
+						<!--  Controls are self-explanatory. Order can be changed. -->
+						<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+						<button class="pswp__button pswp__button--share" title="Share"></button>
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+						<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+						<!-- element will get class pswp__preloader--active when preloader is running -->
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+								<div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+		
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div>
+					</div>
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div
+				</div>
+			</div>
+		</div>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-//			$(function(){
-//				$(".img-wrap").click(function(){
-//					var minPicUrl = $(this).css("background-image");
-//					$(".big-box").css({"background-image":minPicUrl,"display":"block"});
-//				})
-//			})
-
-			function test(){
-				$(".img-wrap").click(function(){
-					var minPicUrl = $(this).css("background-image");
-					var subPicUrl = minPicUrl.substring(5,minPicUrl.length-2)
-					var oImg=$(".big-box img")
-					oImg.attr("src",subPicUrl)
-					$('.big-box').show();
-					var imgHeight = oImg.outerHeight()
-					var imgWidth = oImg.outerWidth()
-					if(imgWidth>=imgHeight){
-						oImg.css({
-							"width":"100%",
-							"left":"0"
-						});
-						oImg.css({
-							"marginTop":-(oImg.outerHeight()/2)+"px"
-						});
-					}else{
-						oImg.css({
-							"heigh":"100%",
-							"left":"0"
-						});
-						oImg.css({
-							"marginTop":-(oImg.outerHeight()/2)+"px"
-						});
-					}
-				})
-				$(".big-box img,.big-box").click(function(){
-						$(".big-box").hide()
-					})
-			}
-			
-				function test2(){
-				$(".img-wrap").click(function(){
-					var minPicUrl = $(this).css("background-image");
-					var subPicUrl = minPicUrl.substring(5,minPicUrl.length-2)
-					var oImg=$(".big-box img")
-					oImg.attr("src",subPicUrl)
-					$('.big-box').show();
-					var imgHeight = oImg.outerHeight()
-					var imgWidth = oImg.outerWidth()
-					oImg.css({
-							"marginTop":-(oImg.outerHeight()/2)+"px",
-							"marginLeft":-(oImg.outerWidth()/2)+"px"
-					});	
-				})
-				$(".big-box img,.big-box").click(function(){
-						$(".big-box").hide()
-					})
-			}
-		
-	 //全兼容的 事件绑定  and  阻止默认事件
-      var EventUtil = {
-	          addHandler: function(element, type, handler){
-	             if (element.addEventListener){
-	                  element.addEventListener(type, handler, false);
-	              } else if(element.attachEvent){
-	                  element.attachEvent('on'+type, handler);
-	              } else {
-	                 element['on'+type] = handler;
-	             }
-	         },
-	 
-	         preventDefault: function(event){
-	             if(event.preventDefault){
-	                 event.preventDefault();
-	             }else{
-	                 event.returnValue = false;
-	             }
-	         }
-	     };
-	     var mediaQuery = {
-	         init:function(){
-	             var _this = this;
-	             _this.outputSize();
-	             EventUtil.addHandler(window,"resize",function(){
-	                 _this.outputSize(); //前面的this要单独保存，否则在这里this指的是window
-	             });
-	         },
-	         outputSize:function(){
-	             var result1 = window.matchMedia('(min-width:1200px)');
-	             var result2 = window.matchMedia('(min-width:992px)');
-	             var result3 = window.matchMedia('(min-width:768px)');
-	 			 //console.log(window.innerWidth);
-	             //console.log(result.matches);
-	             if(result1.matches) {
-	                 console.log(">=1200 大型设备 大台式电脑");
-	                 test2()
-	             }else if(result2.matches){
-	                 console.log("992=< <=1200 中型设备 台式电脑");
-	                 test2()
-	             }else if(result3.matches){
-	                 console.log("768<= <=992 小型设备 平板电脑");
-	                 test()
-	             }else{
-	                 console.log("<=768 超小设备 手机");
-	                 test()
-	             }
-	         }
-	     };
-	     window.onload = function(){
-	         mediaQuery.init();
-	     };
-		</script>
+		<script src="plug/photoswipt/js/photoswipe.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plug/photoswipt/js/photoswipe-ui-default.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/circleContImg.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

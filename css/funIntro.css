@@ -6,7 +6,7 @@ body{
 }
 .features{
 	margin: 0 auto;
-	padding: 80px 0;
+	padding-top: 80px;
 	overflow: hidden;
 }
 .features .title{
@@ -77,12 +77,11 @@ body{
 }
 .item2 .ty{
 	display: inline-block;
-	height: 35px;
-	line-height: 48px;
 	font-size: 20px;
+	padding-top: 8px;
 	padding-left: 115px;
 	background: url(../img/logo.png) no-repeat;
-	background-position: left center;
+	background-position: left top;
 }
 .item2 .now-regist{
 	margin-top: 40px;

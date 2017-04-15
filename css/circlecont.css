@@ -77,11 +77,28 @@ body{
 }
 @media only screen and (min-width: 768px) {
 	.media .media-body>.operation {
-		min-width: 63.3rem;
+		min-width: 30rem;
 	}
 }
-@media only screen and (min-width: 100px) and (max-width: 640px) {
-	
+@media only screen and (max-width: 768px) {
+	.media .media-body>.operation {
+		width: 22rem;
+	}
+}
+@media only screen and (min-width: 370px) and (max-width: 640px) {
+	.media .media-body>.operation {
+		width: 27rem;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+	.media .media-body>.operation {
+		width: 45rem;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.media .media-body>.operation {
+		width: 45rem;
+	}
 }
 @media only screen and (max-width: 768px) {
 	.media-img-list{
@@ -172,4 +189,8 @@ body{
 }
 .main .more a{
 	color:#27b1ea;
+}
+.media-img-list figure{
+	float: left;
+	overflow: hidden;
 }

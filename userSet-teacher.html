@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>设置 | 众云创造教育新体验</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/respCom.css"/>		
+		<link rel="stylesheet" type="text/css" href="css/userSet.css"/>
+		<link rel="stylesheet" type="text/css" href="plug/avar/cropper/cropper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="plug/avar/sitelogo/sitelogo.css"/>
+	</head>
+	<body>
+		<header class="header transparent">
+		   <nav class="navbar navbar-default">
+				<div class="container-fluid"> 
+					<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+					<a class="navbar-brand" href="index.html"></a>
+				    </div>
+				
+					<div class="collapse navbar-collapse clearfloat" id="bs-example-navbar-collapse-1">					  
+				 		<ul class="nav navbar-nav navbar-right nav-user">
+					        <li class="dropdown navbar-button avatar-wrap">
+					          <a href="#" class="dropdown-toggle " data-toggle="dropdown">
+					          	<span class="avatar img-circle"></span>
+								<span class="caret"></span>
+					          </a>
+					          <ul class="dropdown-menu ">
+					            <li><a class="active" href="userSet-teacher.html">设置</a></li>
+					            <li><a href="#">教务</a></li>				
+					          </ul>
+					        </li>
+					      </ul>
+					      <ul class="nav navbar-nav navbar-right">
+		                    <li>
+								<a href="funIntro.html">功能</a>
+							</li>
+							<li>
+								<a href="price.html">价格</a>
+							</li>
+							<li>
+								<a href="downapp.html">下载</a>
+							</li>
+							<li>
+								<a href="solution.html">解决方案</a>
+							</li>
+							<li>
+								<a href="circle.html">学友圈</a>
+							</li>
+		                 </ul>
+				    </div>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="bg-color">
+			<div class="content">
+				<div class="menu">
+					<div class="list active">个人档案</div>
+					<div class="list">个人信息</div>
+					<div class="list">修改头像</div>		
+					<div class="list">密码修改</div>
+				</div><!--menu结束-->
+				<div class="cont_right">
+					<div class="tab" style="display: block;">
+						<div class="con-row">
+							<span>姓名:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="姓名"/>
+							</div>				
+						</div>
+						<div class="con-row">
+							<span>学校:</span>
+							<div class="txt_bar">
+								<select name="sex-type" class="type" >
+									<option value="1" selected="selected">你所在的学校</option>
+									<option value="2">华南师范大学</option>
+									<option value="3">华南理工大学</option>
+								</select>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>学院:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="学院"/>
+							</div>				
+						</div>
+						<div class="con-row">
+							<span>专业:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="专业"/>
+							</div>				
+						</div>
+		
+						<div class="con-row">
+							<span></span>
+							<div class="txt_bar"><a href="javascript:;" id="account_set">提 交</a></div>		                
+		                </div>
+					</div><!--tab3结束-->
+					<div class="tab" style="display: none;">
+						<div class="con-row">
+							<span>昵称:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value="黄老师"  placeholder="您的昵称"/>
+								<i class="correctIcon"></i>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>性别:</span>
+							<div class="txt_bar">
+								<select name="sex-type" class="type" >
+									<option value="男" selected="selected">男</option>
+									<option value="女">女</option>
+								</select>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>手机:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="手机"/>
+								<i class="correctIcon"></i>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>爱好:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="爱好"/>
+								<i class="correctIcon"></i>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>个性签名:</span>
+							<div class="txt_bar">
+								<input class="txt" type="text" value=""  placeholder="个性签名"/>
+								<i class="correctIcon"></i>
+							</div>
+						</div>
+						<div class="con-row">
+							<span>角色:</span>
+							<div class="txt_bar">
+								<select name="sex-type" class="type" >
+									<option value="学生" selected="selected">学生</option>
+									<option value="老师">老师</option>
+								</select>
+							</div>
+						</div>
+						<div class="con-row">
+							<span></span>
+							<div class="txt_bar"><a id="user_info" href="javascript:;">提 交 </a></div>
+						</div>
+					</div><!--tab1结束-->
+					<div class="tab" style="display: none;">
+						<div class="ibox-content">
+							<div class="row">
+								<div id="crop-avatar">
+									<div class="avatar-view center-block" style="width: 100px; height: 100px;" title="Change Logo Picture">
+								    	<img src="plug/avar/logo.jpg" alt="Logo">
+								    </div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="javascript:;" class="onload-btn" id="onload">上传头像</a>
+					</div><!--tab2结束-->					
+					<div class="tab" style="display: none;">
+						<div class="con-row">
+		                    <span>当前密码:</span>
+		                    <div class="txt_bar">
+		                        <input type="password" class="txt" id="old_password" value="" placeholder="请输入当前密码">
+		                    </div>
+		                </div>
+		                <div class="con-row">
+		                    <span>新的密码:</span>
+		                    <div class="txt_bar">
+		                        <input type="password" class="txt" id="npassword" value="" placeholder="请输入新的密码">
+		                    </div>
+		                </div>
+		                <div class="con-row">
+		                    <span>确认密码:</span>
+		                    <div class="txt_bar">
+		                        <input type="password" class="txt" id="npassword" value="" placeholder="请确认新的密码">
+		                    </div>
+		                </div>
+		                <div class="con-row">
+		                	<span></span>
+		                    <div class="txt_bar"><a href="javascript:;" id="pedit">提 交</a></div>
+		                </div>
+					</div><!--tab4结束-->
+				</div><!--cont_right结束-->
+			</div><!--content结束-->
+		</div>
+		<footer class="site-footer">
+			<div class="container">
+				<div class="footer-nav row">
+					<div class="right">
+						<div class="right-item col-xs-12 col-sm-4">
+							<span class="m-place rwm1"></span>
+							<span class="icon-place sb-icon1"></span>
+							<p>公众号</p>
+						</div>
+						<div class="right-item col-xs-12 col-sm-4">
+							<span class="m-place rwm2"></span>
+							<span class="icon-place sb-icon2"></span>
+							<p>iOS</p>
+						</div>
+						<div class="right-item col-xs-12 col-sm-4">
+							<span class="m-place rwm3"></span>
+							<span class="icon-place sb-icon3"></span>
+							<p>安卓</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright container-fluid">
+				<span class="copyandlang text col">Copyright © 2017 allimu.com 版权所有</span>
+				<span class="copyandlang text">地址：广州市天河区五山路科华街251号<br class="visible-xs" />  乐天创意园B座5005单元</span>
+				<span class="copyandlang text">广州众盟信息科技有限公司</span>
+				<span class="copyandlang text">电话：020-8558-2303</span>	
+			</div>
+		</footer>
+		
+
+		<div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<form class="avatar-form" action="{{url('admin/upload-logo')}}" enctype="multipart/form-data" method="post">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal" type="button">&times;</button>
+							<h4 class="modal-title" id="avatar-modal-label">上传头像</h4>
+						</div>
+						<div class="modal-body">
+							<div class="avatar-body">
+								<div class="avatar-upload">
+									<input class="avatar-src" name="avatar_src" type="hidden">
+									<input class="avatar-data" name="avatar_data" type="hidden">
+									<label for="avatarInput">图片上传</label>
+									<input class="avatar-input" id="avatarInput" name="avatar_file" type="file"></div>
+								<div class="row">
+									<div class="col-md-9">
+										<div class="avatar-wrapper"></div>
+									</div>
+									<div class="col-md-3">
+										<div class="avatar-preview preview-lg"></div>
+									</div>
+								</div>
+								<div class="row avatar-btns">
+									<div class="col-md-9">
+										<div class="btn-group">
+											<button class="btn" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"><i class="fa fa-undo"></i> 向左旋转</button>
+										</div>
+										<div class="btn-group">
+											<button class="btn" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"><i class="fa fa-repeat"></i> 向右旋转</button>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<button class="btn btn-success btn-block avatar-save" type="submit"><i class="fa fa-save"></i> 保存修改</button>
+									</div>
+								</div>
+							</div>
+						</div>
+			  		</form>
+			  	</div>
+			  </div>
+			</div>
+			<div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+		
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/userSet.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plug/avar/cropper/cropper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plug/avar/sitelogo/sitelogo.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

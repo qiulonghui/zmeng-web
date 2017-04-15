@@ -1,6 +1,6 @@
 .main{
 	padding-top: 50px;
-	padding-bottom: 300px;
+	padding-bottom: 100px;
 }
 @media only screen and (max-width: 768px) {
 	.main{
@@ -10,7 +10,7 @@
 .main .jumbotron{
 	height: 370px;
     text-align: center;
-    background: url(../img/solution-big.jpg) no-repeat;
+    background: url(../img/2.jpg) no-repeat;
 }
 .main .jumbotron h1 {
 	font-size: 48px;
@@ -21,6 +21,8 @@
 @media only screen and (max-width: 768px) {
 	.main .jumbotron{
 		height: 260px;
+		background: url(../img/2-min.jpg) no-repeat;
+		background-position-x: center;
 	}
 	.main .jumbotron h1 {
 		font-size: 32px;

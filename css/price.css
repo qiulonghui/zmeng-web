@@ -90,7 +90,7 @@
 }
 .main{
 	text-align: center;
-	padding: 150px 0 300px;
+	padding: 100px 0 100px;
 }
 @media only screen and (max-width: 765px) {
 	.main{

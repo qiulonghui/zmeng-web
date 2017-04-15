@@ -361,7 +361,8 @@
     -webkit-backface-visibility: hidden;
 }
 
-input[type=button], input[type=submit], input[type=reset]{
+input[type=button], input[type=submit], input[type=reset],
+input[type=password],input[type=tel]{
     border: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -370,11 +371,24 @@ input[type=button], input[type=submit], input[type=reset]{
     cursor: pointer;
     outline: none;
 }
-input[type=text],select{
+input[type=text]{
+	border: 0;
 	font-size: 14px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
 	outline: none;
 }
-
+@media only screen and (max-width: 768px) {
+	select{
+		border: 0;
+		font-size: 14px;
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+		appearance: none;
+		outline: none;
+	}
+}
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -382,10 +396,13 @@ select:-webkit-autofill {
 }  
     
 .main{
-	padding-bottom: 30rem;
+	padding-bottom: 6rem;
 }
 @media only screen and (max-width: 768px) {
 	.main{
 		padding-bottom: 3rem;
 	}
+}
+.navbar-nav li .active{
+	color: #03A9F4 !important;
 }
