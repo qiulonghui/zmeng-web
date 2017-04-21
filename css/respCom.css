@@ -260,21 +260,18 @@
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-}
-.footer-nav .right .rwm1{
-	background: url(../img/erwm1.jpg) no-repeat;
-}
-.footer-nav .right .rwm2{
-	background: url(../img/erwm2.jpg) no-repeat;
-}
-.footer-nav .right .rwm3{
-	background: url(../img/erwm3.jpg) no-repeat;
+	background-color: #FFFFFF;
 }
 .footer-nav .right .right-item .icon-place{
 	display:block;
 	margin: 20px  auto 8px;
 	width: 43px;
 	height: 43px;
+}
+.right-item .icon-place a{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 .footer-nav .right .right-item .sb-icon1{
 	background: url(../img/wx-icon.png) no-repeat;

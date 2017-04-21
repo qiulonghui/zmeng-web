@@ -36,6 +36,10 @@ body{
 		margin-bottom: 6rem; 
 	}
 }
+.media-list .media + .media{
+	border-top: 1px solid #e2e3e7;
+	padding-top: 20px;
+}
 .comment-list .media-list .media .media-left img{
 	border-radius: 50%;
 }

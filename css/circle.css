@@ -63,6 +63,7 @@ body{
 	text-align: right;
 	font-size: 1.2rem;
 }
+
 @media only screen and (max-width: 768px) {
 	.item .item-title{
 		padding-bottom:0.5rem;
